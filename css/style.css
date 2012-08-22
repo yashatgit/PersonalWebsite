@@ -174,7 +174,7 @@
 /* 	My CSS Starts here
 		================================================================================================================================ */		
 .bodybg{
-	  background-image:url(../images/back1.jpg);
+	  background-image:url(../images/back1.png);
 	  background-repeat:repeat;
   }
   
@@ -427,8 +427,7 @@
   }
   
   #home_about{
-	  
-	  margin-top:20px;
+
   }
   
   #home_about h1{
@@ -441,8 +440,8 @@
 
   #home_about h2{
 	  font: 50px calibri;
-	  color: #696969;
-	     text-shadow: 1px 1px 3px #888;
+	  color: #CF0E0A;
+	  text-shadow: 1px 1px 3px #888;
 	  margin:0px;
 	  font-family:DiavloBook; 
   }
