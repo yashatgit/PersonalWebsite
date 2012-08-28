@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		    <title>Yash Soni's Portfolio</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+		<meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+		<link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/recent.css" />
+		
+		<noscript>
+			<style>
+				.da-thumbs li a div {
+					top: 0px;
+					left: -100%;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+				.da-thumbs li a:hover div{
+					left: 0px;
+				}
+			</style>
+		</noscript>
+
+    </head>
+    <body class="bodybg">
+		<div id="header">      	
+			<div id="hnavbar">    
+				 <ul id="hnavlist">
+					  <li id="home"><a href="home.html"></a></li>
+					  <li id="portfolio"><a href="portfolio.html"></a></li>
+					  <li id="about"><a href="about.html"></a></li>
+					  <li id="contact"><a href="contact.html"></a></li>
+				 </ul>             
+			</div>
+	   </div>
+   
+		<div id="logo"></div>
+		<div id="portfolio_line"> </div>
+		
+        <div class="container-fluid" style="padding-top:100px; max-width:1000px; margin-left: auto; margin-right: auto;">
+			<div class=heading>
+				<h2>Here are some of my recent works. Feel free to explore!</h2>
+			</div>
+		
+		
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="portfolio_design_new.html">
+							<img src="images/recent_images/1.jpg" />
+							<div><span>New Design Portfolio</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="404.html">
+							<img src="images/recent_images/2.jpg" />
+							<div><span>Oops! 404</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://dribbble.com/shots/504197-Mr-Crabs">
+							<img src="images/recent_images/3.jpg" />
+							<div><span>More Welcoming Home?!</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
+							<img src="images/recent_images/4.jpg" />
+							<div><span>Gallery of Mo 2.Mo logo by Adam Campion</span></div>
+						</a>
+					</li>
+					
+				</ul>
+			</section>
+			<hr>
+			<footer class="footer">
+				<div class="container-fluid" align="center">
+						 <p>
+					&copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+					</p>
+				</div>
+			</footer>
+        </div> <!--Container end-->
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-thumbs > li').hoverdir();
+
+			});
+		</script>
+    </body>
+</html>
