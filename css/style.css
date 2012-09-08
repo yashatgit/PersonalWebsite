@@ -417,6 +417,14 @@
   
   /*  ---------------------------------------Home Page Here--------------------------------------------*/
   
+  /*
+  a[href^="http"] {  
+   background: url('img/external_links/grey-darker/external-link-grey-dark02-Shapes4FREE.png') no-repeat;  
+   padding-left: 10px;  
+	}
+	*/
+
+  
   #home_line{
 	  position:absolute;
 	  top:0px;
