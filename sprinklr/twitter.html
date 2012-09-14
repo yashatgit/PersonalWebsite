@@ -29,14 +29,13 @@
 		<script>
 			function displayFeeds()
 			{
-				var t_nameid=document.getElementById("t_name").value;
-				var feednumber = document.getElementById("feednumber").value;
-				
-				document.getElementById("feedButton").className += " btn-success";		
+				var t_nameid=document.getElementById("t_name").value; //get the username
+				var feednumber = document.getElementById("feednumber").value; //number of feeds to be displayed				
+				document.getElementById("feedButton").className += " btn-success";	//on click of the button, change the color	
 		   $(function() {
 			
-			var url1 = 'https://api.twitter.com/1/users/show.json?callback=?&amp;screen_name=';
-			var url2 = 'http://twitter.com/status/user_timeline/'
+			var url1 = 'https://api.twitter.com/1/users/show.json?callback=?&amp;screen_name=';  //to get the details of the user
+			var url2 = 'http://twitter.com/status/user_timeline/';		// to get the feeds
 			
 			
 			$.getJSON(url1 + t_nameid, function(data){
@@ -52,13 +51,14 @@
 			});
 			
 			$.getJSON(url2 + t_nameid + '.json?count=' + feednumber +'&callback=?', function(data){
+				//traverse each data element to extract the required status
 				$.each(data, function(index, item){
 					$('#twitter').append('<div class="tweet"><p>' + item.text.linkify() + '</p><p>' + relative_time(item.created_at) + '</p></div>');
 				});
 			
 			});
 
-						
+			//Function to display the Date			
 			function relative_time(time_value) {
 			  var values = time_value.split(" ");
 			  time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -87,6 +87,7 @@
 			  return r;
 			}
 			
+			//Function to display the url in the status
 			String.prototype.linkify = function() {
 				return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
 					return m.link(m);
@@ -126,7 +127,7 @@
 					<div class="statusCount"></div>
 					
 					<div id="twitter" class="twitter_feed well">
-						<img src='css/images/twitter-logo_1.png' style="margin-top: -120px;" align="right" />
+						<img src='css/images/twitter-logo_1.png' style="margin-top: -105px;" align="right" />
 					</div>
 											 
 				</div><!-- span div ends -->
