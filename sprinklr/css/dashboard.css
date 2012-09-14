@@ -1,0 +1,19 @@
+
+.twitter_feed{ 
+	width: 100%; 
+	margin: 0 2% 0 0; 
+	padding: 2%;
+	float: left; 
+	background: #f8f8f8;
+	border: 1px solid #dadada;
+}
+
+img.profile-pic { float: left; padding: 5px; }
+
+#flickr img, #dribbble img, #twitter img { width: 100px; margin: 10px; }
+
+.tweet { 
+	padding: 5px; 
+	margin: 1px 0;
+	background: white;
+}
