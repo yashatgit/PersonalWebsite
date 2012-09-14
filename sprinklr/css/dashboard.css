@@ -10,9 +10,6 @@
 .twitter_feed p {
 	line-height: 20px;
 	}
-img.profile-pic { float: left; padding: 5px; }
-
-#flickr img, #dribbble img, #twitter img { width: 100px; margin: 10px; }
 
 .tweet { 
 	padding: 5px; 
