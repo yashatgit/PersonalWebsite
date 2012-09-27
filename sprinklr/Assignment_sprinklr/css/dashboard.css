@@ -1,0 +1,18 @@
+
+.twitter_feed{ 
+	width: 100%; 
+	margin: 0 2% 0 0; 
+	padding: 2%;
+	float: left; 
+	background: #f8f8f8;
+	border: 1px solid #dadada;
+}
+.twitter_feed p {
+	line-height: 20px;
+	}
+
+.tweet { 
+	padding: 5px; 
+	margin: 2px 0;
+	background: white;
+}

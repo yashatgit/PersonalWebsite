@@ -439,8 +439,8 @@
   }
   
   #home_about h1{
-	  font: bold 80px DiavloBook;
-	  color: #9c1010;
+	  font: bold 60px DiavloBook;
+	  color: #C22B2B;
 	  text-shadow: 1px 1px 3px #888;
 	  margin:0px;
 	  padding:0px;  
@@ -448,7 +448,7 @@
 
   #home_about h2{
 	  font: 50px calibri;
-	  color: #CF0E0A;
+	  color: #696969;
 	  text-shadow: 1px 1px 3px #888;
 	  margin:0px;
 	  font-family:DiavloBook; 
@@ -574,3 +574,54 @@ width:32px;
 a img {
 border:none;
 }
+
+/*CoffeeCup*/
+
+.cup-smoke{
+	position:absolute;
+	display:block;	
+	width:200px;
+	height:200px;
+	left:30px;
+	top:-120px;
+	opacity:1;
+	-webkit-animation:cup-smoke-fadeInOut 3s linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-play-state:paused;
+	-moz-animation:cup-smoke-fadeInOut 3s linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-play-state:paused;
+	-ms-animation:cup-smoke-fadeInOut 3s linear;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-play-state:paused;}
+	
+.cup-smoke#cup-smoke-1{
+	background:url(smoke/smoke1.png);
+	}
+	
+.cup-smoke#cup-smoke-2{
+	background:url(smoke/smoke1.png);
+	-webkit-animation-delay:0.5s;
+	-moz-animation-delay:0.5s;
+	-ms-animation-delay:0.5s;
+	}
+	
+.cup-smoke#cup-smoke-3{
+	background:url(smoke/smoke1.png);
+	-webkit-animation-delay:1.5s;
+	-moz-animation-delay:1.5s;
+	-ms-animation-delay:1.5s;
+	}
+	
+@-webkit-keyframes cup-smoke-fadeInOut{
+	0%{opacity:0;-webkit-transform:translatey(50px);} 
+	50%{opacity:1;-webkit-transform:translatey(25px);} 
+	100%{opacity:0;-webkit-transform:translatey(0);}
+	}
+	
+@-moz-keyframes cup-smoke-fadeInOut{
+	0%{opacity:0;-moz-transform:translatey(50px);} 
+	50%{opacity:1;-moz-transform:translatey(25px);} 
+	100%{opacity:0;-moz-transform:translatey(0);}
+	}
+	

@@ -8,8 +8,6 @@
 
 <!-- Main stylesheet imports bootstrap css and adds custom -->
     <link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/pdemo.css" />
-    <link rel="stylesheet" type="text/css" href="css/pslider.css" />
     
     <style>
     	/* To keep short panes open decently tall */
@@ -18,22 +16,6 @@
     <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/mobilyblocks.js" type="text/javascript"></script>
 	<script src="js/init.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-	<script type="text/javascript" src="js/jquery.cslider.js"></script>
-		<script type="text/javascript">
-			$(function() {
-			
-				$('#da-slider').cslider({
-					autoplay	: false,
-					bgincrement	: 10
-				});
-			
-			});
-		</script>
-	
-	<noscript>
-			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
-	</noscript>
 
 <!-- Fav and touch icons -->
 		<!-- alternatively, remove these lines and place icons
@@ -65,47 +47,17 @@
    </div>
   
    <div id="home_line"> </div>    		
-	<div class="container-fluid" style="padding-top:60px; margin-left:auto; margin-right:auto; max-width: 1160px;">    
+	<div class="container-fluid" style="padding-top:100px; margin-left:auto; margin-right:auto; max-width: 1160px;">    
 		<div class="row-fluid">
         	<div class="span12">
-			
-			<div id="da-slider" class="da-slider">
-				<div class="da-slide">
-					<h2>A Warm Welcome</h2> 
-					<p>I am Yash, 
-						a web and graphic designer living in India.</br>
-                      Here you will find my most current work; everything from identity and branding to graphic design, web development and more.</p>
-					<div class="da-img"><img src="images/pslider/1.png" alt="image01" /></div>
-					
-					<div class="cup-smoke" id="cup-smoke-1" style="-webkit-animation-play-state: running; "></div>
-					<div class="cup-smoke" id="cup-smoke-2" style="-webkit-animation-play-state: running; "></div>
-					<div class="cup-smoke" id="cup-smoke-3" style="-webkit-animation-play-state: running; "></div>
-					
-				</div>
 				
-				<div class="da-slide portfolio">
-					<h2 style="display:inline;">I <img style="position:static;" src="images/pslider/heart.png" /> Pixels! </h2>
-					<p>I am crazy about colours, grids and fancy fonts.</br> Check my <a href="portfolio_design.html">Design Portfolio</a> for more details.
-						
-					</p>
-					
-					<div class="da-img"><img src="images/pslider/3.png" alt="image01" /></div>
-				</div>
-				
-								
-				<div class="da-slide contact">
-					<h2>Let's Talk</h2>
-					<p>I always enjoy hearing from people so if you have a question, general enquiry or a project you'd like to discuss, feel free to <a href="contact.html">get into touch</a>.</p>
-					
-					<div class="da-img"><img src="images/pslider/2.png" alt="image01" /></div>
-				</div>
-				<nav class="da-arrows">
-					<span class="da-arrows-prev"></span>
-					<span class="da-arrows-next"></span>
-				</nav>
-			</div>
-				
-                <div >                      
+                <div id="home_about" class="span7">
+                    <h1>A Warm Welcome!</h1>
+                    <h2>I'm <a href="about.html">Yash</a>,</h2>
+                    <h3>a web and graphic designer living in India.</h3>
+                    <h3>This is my portfolio / <strike>blog</strike> / general online presence.<br> If you like what you see and have a project you'd like to discuss, feel free to <a href="contact.html">get into touch</a>.</h3>
+							
+                    <br><br>  
 					<div id="content">
 						<div class="socials" style="opacity:1">
 						  <ul class="reset">
@@ -119,19 +71,26 @@
 						</div>	
 					</div>
     			</div>
+				
+				<div class="span4" style="margin-top:80px; position:relative">
+					<img src="images/pslider/1.png" />
+					<div class="cup-smoke" id="cup-smoke-1" style="-webkit-animation-play-state: running; "></div>
+					<div class="cup-smoke" id="cup-smoke-2" style="-webkit-animation-play-state: running; "></div>
+					<div class="cup-smoke" id="cup-smoke-3" style="-webkit-animation-play-state: running; "></div>
+				</div>
                 
             </div>    
 		</div><!-- .row-fluid -->
     
     
 			<hr>
-		<footer>
-		  <div class="container-fluid" align="center">
-		   <p>
-					&copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-					</p>
-				</div>
-		</footer>
+    <footer>
+      <div class="container-fluid" align="center">
+       <p>
+                &copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+                </p>
+            </div>
+    </footer>
 	</div> <!-- .container -->
   </body>
 </html>
