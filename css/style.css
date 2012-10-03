@@ -248,8 +248,9 @@
 				transition: opacity 1s linear;}
 	
 	/*  ---------------------------------------Portfolio paint Page Here--------------------------------------------*/
-				
-		#portfolio_line{
+	
+		
+	#portfolio_line{
 	  position:absolute;
 	  top:0px;
 	  height:15px;
