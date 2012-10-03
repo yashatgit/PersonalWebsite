@@ -178,6 +178,15 @@
 	  background-repeat:repeat;
   }
   
+  /* external link icon*/
+  .externallink a[href^="http"] {  
+   background: url('img/external_links/grey-darker/external-link-grey-dark02-Shapes4FREE.png') center right no-repeat;  
+   padding-right: 13px;  
+	}
+	
+
+  
+  
   #header{	  
 	  width:100%;
 	  height:70px;
@@ -417,13 +426,6 @@
   
   /*  ---------------------------------------Home Page Here--------------------------------------------*/
   
-  /*
-  a[href^="http"] {  
-   background: url('img/external_links/grey-darker/external-link-grey-dark02-Shapes4FREE.png') no-repeat;  
-   padding-left: 10px;  
-	}
-	*/
-
   
   #home_line{
 	  position:absolute;
@@ -625,3 +627,24 @@ border:none;
 	100%{opacity:0;-moz-transform:translatey(0);}
 	}
 	
+	
+/* =============================================================Sticky Footer ===================================================
+	The negative value for the margin in .wrapper is the same number as the height of .footer and .push. 
+	The negative margin should always equal to the full height of the footer (including any padding or borders you may add).
+	http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+}
