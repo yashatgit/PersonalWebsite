@@ -443,7 +443,7 @@
   
   #home_about h1{
 	  font: bold 60px DiavloBook;
-	  color: #C22B2B;
+	  color: #9c1010;
 	  text-shadow: 1px 1px 3px #888;
 	  margin:0px;
 	  padding:0px;  
@@ -471,10 +471,11 @@
   
 }  
     #home_about h3{
-		font-size:28px;
+	  font-size:28px;
 	  color: #696969;
 	  text-shadow: 1px 1px 1px #888; 
-	  font-family:DiavloBook;  
+	  font-family:DiavloBook;
+	  line-height: 30px;	  
   } 
   #home_about h3 a{
 	  text-decoration:none;
@@ -603,14 +604,14 @@ border:none;
 	}
 	
 .cup-smoke#cup-smoke-2{
-	background:url(smoke/smoke1.png);
+	background:url(smoke/smoke2.png);
 	-webkit-animation-delay:0.5s;
 	-moz-animation-delay:0.5s;
 	-ms-animation-delay:0.5s;
 	}
 	
 .cup-smoke#cup-smoke-3{
-	background:url(smoke/smoke1.png);
+	background:url(smoke/smoke3.png);
 	-webkit-animation-delay:1.5s;
 	-moz-animation-delay:1.5s;
 	-ms-animation-delay:1.5s;
