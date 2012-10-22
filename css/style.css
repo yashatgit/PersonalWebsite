@@ -556,6 +556,18 @@
 	  font-family: "Lsegoeui";  
 	  src: url('Fonts/segoeuil.eot'); /* IE */  
 	  src: url('Fonts/segoeuil.ttf') format("truetype"); /* non-IE */  
+	} 
+
+@font-face {  
+	  font-family: "SegoeL";  
+	  src: url('Fonts/SegoeL.eot'); /* IE */  
+	  src: url('Fonts/SegoeL.ttf') format("truetype"); /* non-IE */  
+	}
+
+@font-face {  
+	  font-family: "SegoeR";  
+	  src: url('Fonts/SegoeR.eot'); /* IE */  
+	  src: url('Fonts/SegoeR.ttf') format("truetype"); /* non-IE */  
 	}  
 
 /*-----------------------------------------------------------FIndMe Widget-----------------------------------------------------------*/

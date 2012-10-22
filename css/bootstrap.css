@@ -132,7 +132,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Nsegoeui", Helvetica, Arial, sans-serif;
+  font-family: "SegoeR", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #333333;
@@ -322,7 +322,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: "Nsegoeui", Helvetica, Arial, sans-serif;
+  font-family: "SegoeR", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
