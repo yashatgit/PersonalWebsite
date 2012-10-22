@@ -310,6 +310,21 @@
 		*/		
 	}
 	
+	#logo_small
+        {
+		position:absolute;
+		top:0px;
+		height:84px;
+		width:93px;
+		left:5%;
+		z-index: 3;		
+		background:url(../images/YS_logo_sprite_small.png);
+        }
+		
+	#logo_small:hover{		
+				background-position:-93px 0px;				
+	}
+	
 	#yashimage{
 		-moz-transition: all 1s ease;
 			-webkit-transition: all 1s ease;
