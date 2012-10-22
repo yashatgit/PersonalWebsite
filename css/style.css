@@ -546,6 +546,18 @@
     font-style: normal;
 
 }
+@font-face {  
+	  font-family: "Nsegoeui";  
+	  src: url('Fonts/segoeui.eot'); /* IE */  
+	  src: url('Fonts/segoeui.ttf') format("truetype"); /* non-IE */  
+	}
+
+@font-face {  
+	  font-family: "Lsegoeui";  
+	  src: url('Fonts/segoeuil.eot'); /* IE */  
+	  src: url('Fonts/segoeuil.ttf') format("truetype"); /* non-IE */  
+	}  
+
 /*-----------------------------------------------------------FIndMe Widget-----------------------------------------------------------*/
 .socials {
 display:block;
