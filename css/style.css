@@ -447,6 +447,24 @@
   }
   
   
+  .textquote{
+		/*
+		letter-spacing: 0px;
+		padding:0px 0px 30px 70px;
+		background: #fff url(../images/quote_medium.png) no-repeat 0px 5px;
+		color: #777;
+		height: 80px; 
+		vertical-align: middle;
+		display: table-cell;
+		margin-top: 15px;
+		font-size: 22px;
+		font-style: italic;
+		line-height: 20px;
+	     */
+		background: url(../images/quote_medium.png) no-repeat 0px 5px;
+	}
+	
+  
   /*---------------------------------------Home Page Here--------------------------------------------*/
   
   

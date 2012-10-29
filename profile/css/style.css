@@ -14,7 +14,7 @@
 	/*-------------------------------------------------------*/
 	#container {
 		margin:0 auto;
-		width:860px;
+		width:920px;
 		margin-bottom: 20px;
 		margin-top: 30px;
 	}
@@ -197,9 +197,9 @@
 	.personal-info {
 		float:left;
 		margin-top:30px;
-		width:310px;
+		width:320px;
 		min-height:230px;
-		margin-left:10px;
+		margin-left:70px;
 		background:url(../images/personal-info-sep.png) no-repeat left top;
 		padding:20px 0 0 20px;
 	}
@@ -316,7 +316,7 @@
 	/* Timeline Section */
 	.timeline-section {
 		padding-top: 29px;
-		width:460px;
+		width:520px;
 		padding-right:60px;
 	}
 	.timeline {
@@ -421,6 +421,103 @@
 	.resumeDl:hover{
 		background-color: #A87F09;
 	}
+	
+	.resumeDl1{
+		color:#fff;
+		background-color: #F4C024;
+		padding:8px;
+		margin-top: -29px;
+		border:none;
+		cursor:pointer;
+		font-size:13px;
+		float: right;
+		vertical-align: middle;
+	}
+	.resumeDl1:hover{
+		background-color: #A87F09;
+	}
+	
+	
+	/*-------------------------------------------------------*/
+		/* Testimonial Section */
+	/*-------------------------------------------------------*/
+	
+	.textblock, .textblock-small {
+		letter-spacing: 0px;
+		padding:0px 0px 0px 70px;
+		background: #fff url(../images/quote_medium.png) no-repeat 0px 5px;
+		color: #777;
+		height: 80px; /* Height is specified so that the 2 lines below would work. */
+		vertical-align: middle;
+		display: table-cell;
+		margin-top: 15px;
+		font-size: 22px;
+		font-style: italic;
+		line-height: 20px;
+	}
+	
+	.textblock-small {
+		background: url(../images/quote.png) no-repeat 0px 2px;
+		padding-left: 40px;
+		font-size: 16px;
+		padding-top: 0;
+		height: 60px;
+		padding-bottom: 30px;
+	}
+	
+	#testimonials .textblock{
+		padding-left: 30px;
+		padding-right: 10px;
+		padding-top: 10px;
+		font-size: 16px;
+		margin-top: 0;
+	}
+	
+	.testimonials .textblock{
+		padding-left: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		font-size: 14px;
+		margin-top: 0;
+		background: url(../images/quote.png) no-repeat 0px 2px;
+		text-indent: 35px;
+		font-style: italic;
+	}
+	
+	.testimonials .textblock p {
+		margin-bottom: 0;
+	}
+	
+	.testimonials .author, #testimonials .author {
+		float: right;
+		font-size: 14px;
+		padding-right: 10px;
+	}
+	
+	.bx-prev, .bx-next {
+		background: url(../images/slider_btn.png) no-repeat left 0px;
+		width: 12px;
+		height: 16px;
+		right: 20px;
+		top: -68px;
+		margin-top: 30px;
+		margin-right: 20px;
+		position:absolute;
+		text-indent: -999999px;
+	}
+	.bx-prev:hover {
+		background: url(../images/slider_btn.png) no-repeat left -16px;
+	}
+			
+	.bx-next {
+		background: url(../images/slider_btn.png) no-repeat right 0px;
+		right: 0px;
+	}
+	
+	.bx-next:hover {
+		background: url(../images/slider_btn.png) no-repeat right -16px;
+	}
+	
 	/*-------------------------------------------------------*/
 		/* Portfolio Section */
 	/*-------------------------------------------------------*/

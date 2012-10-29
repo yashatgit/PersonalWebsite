@@ -3,7 +3,8 @@
 
 <head>
     
-    <title>Personal vCard Template</title>
+    <title>Profile YashSoni</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,7 +23,13 @@
     <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    
+    
+    <! Initialize the Testimonial Slider -->
     <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.bxSlider.min.js" ></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
     
     <script type="text/javascript">
 		$(document).ready(function() {
@@ -30,11 +37,6 @@
 		});
 	</script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#commentForm").validate({meta: "validate"});
-		});
-	</script>
 	
 	<script type="text/javascript">var submitted=false;</script>
     
@@ -105,29 +107,38 @@
                 
                 <!-- Resume -->
                 <div id="resume">
-                <span class="resumeDl"><img src="images\downloadRS.png"> </span>
+                <span class="resumeDl"><a href="..\documents\Resume_YashSoni.pdf" target="_new"><img src="images\downloadRS.png"></a></span>
                 	 <div class="timeline-section">
                         <!-- Timeline for Employment  -->   
-                        <h3 class="main-heading"><span>Employment</span></h3>   
+                        <h3 class="main-heading"><span>Work Experience</span></h3>   
                         <ul class="timeline">
-                            <li>
-                                                   
+                            <li>                   
                                 <div class="timelineUnit">
-                                    <h4>UI Design Engineer<span class="timelineDate">2012 - Present</span></h4>
-                                    <h5>Sprinklr</h5>
+                                    <h4><a style="text-decoration: underline;" href="http://www.sprinklr.com">Sprinklr</a><span class="timelineDate">2012 - Present</span></h4>
+                                    <h5>UI Design Engineer</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
                                 </div>
                             </li>
+                            
                             <li>
-                         
                                 <div class="timelineUnit">
-                                    <h4>Graphic Developer & Research Scholar<span class="timelineDate">2011 - 2012</span></h4>
-                                    <h5>Carnegie Mellon University</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus. amet ligula non lectus Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    <h4>Human Development Lab, Carnegie Mellon University<span class="timelineDate">May to Aug. 2011</span></h4>
+                                    <h5>Graphic Developer & Research Scholar <span style="float:right; padding-right:6px;">Internship</span></h5>
+                                    <p>Kinesthetic Learning -Developed motion sensing games to gamify Textbook content;</p>
+                                    <p>Mentored students and prepared software boot-camps to help new mentees;</p>
                                 </div>
                             </li>
                             
-                            <div class="clear"></div>
+                            <li>
+                                <div class="timelineUnit">
+                                    <h4>USID, Gurukul<span class="timelineDate">Jun. to Jul. 2010</span></h4>
+                                    <h5>User Experience Researcher <span style="float:right; padding-right:6px;">Internship</span></h5>
+                                    <p>Developed ‘Emergency Response Decision System’ for handling emergency situations in Hospitals;</p>
+                                    <p>Was one of the 48 students selected from all over India;</p>
+                                </div>
+                            </li>
+                            
+                            <div class="clear"></div></ul></br>
                         </ul> 
                         <!-- /Timeline for Employment  -->
 
@@ -136,15 +147,62 @@
                          <ul class="timeline">
                             <li>            
                                 <div class="timelineUnit">
-                                    <h4>B-Tech.<span class="timelineDate">2008 - 2012</span></h4>
-                                    <h5>DAIICT</h5>
+                                    <h4>B.Tech-Information and Communication Technology<span class="timelineDate">2008 - 2012</span></h4>
+                                    <h5><a style="text-decoration: underline;" href="http://www.daiict.ac.in">DA-IICT</a>, Gandhinagar, India</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>
                                 </div>
                             </li>
                             
+                            <div class="clear"></div></ul></br>
+                        </ul> 
+                        <!-- /Timeline for Education  --> 
+                        
+                        
+                        <!-- Timeline for Projects  -->   
+                        <h3 class="main-heading"><span>Projects</span></h3>   
+                         <ul class="timeline">
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>KinectoTherapy <a style="text-decoration: underline;" href="http://www.kinectotherapy.in">www.kinectotherapy.in</a><span class="timelineDate">Jan to May, 2012</span></h4>
+                                    <h5>Designer, Developer (JS, C#, Unity3D,.NET, 3Ds Max) <span style="float:right; padding-right:6px;">Team Size: 2</span></h5>
+                                    <p>Rehabilitation System to aid patients with motor disorders using motion sensing exercise routines;</p>
+                                    <p>Wide media coverage in News Papers, Journals and TV;</p>
+                                    <p>Won 2nd prize in Microsoft Imagine Cup India in Software Design Category (Accessibility);</p>
+                                </div>
+                            </li>
+                            
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>Space Recyclers <span class="timelineDate">Aug to Oct, 2011</span></h4>
+                                    <h5>Designer & Developer (Panda3D, Python) <span style="float:right; padding-right:6px;">Team Size: 1</span></h5>
+                                    <p>Created 3D game using Panda3D game engine;</p>
+                                    <p>Adjudged as the best game in a class of 120 students;</p>
+                                </div>
+                            </li>
+                            
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>DA-Live <span class="timelineDate">Jan to Apr, 2011</span></h4>
+                                    <h5>Designer & Developer (ASP.Net, HTML, JS, SMS Gateway) <span style="float:right; padding-right:6px;">Team Size: 10</span></h5>
+                                    <p>Created website to club activities of college using Software Engineering Principles;</p>
+                                    <p>Installed OZAKI SMS gateway to send periodic SMS notifications;</p>
+                                </div>
+                            </li>
+                            
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>PC-Remote <span class="timelineDate">Oct to Dec, 2010</span></h4>
+                                    <h5>Designer & Developer (Matlab, RC5 Protocol, Audacity) <span style="float:right; padding-right:6px;">Team Size: 2</span></h5>
+                                    <p>Created software to use any TV remote to control Computer;</p>
+                                    <p>Created algorithm to create remote specific files by studying RC-5 protocol using Matlab;</p>
+                                </div>
+                            </li>
+                            
+                            
+                            
                             <div class="clear"></div>
                         </ul> 
-                        <!-- /Timeline for Education  -->              
+                        <!-- /Timeline for Projects  -->              
                     </div>
                     <div class="skills-section">
                         <!-- Skills -->
@@ -211,7 +269,35 @@
                             </li>
                         </ul>
                      <!-- /Skills -->
+                     
+                     </br>
+                     <!-- Testimonials -->
+                     <h3 class="main-heading"><span>Testimonials</span></h3>
+                     <div class="item">
+								<ul class="no-style" id="testimonials">
+									<!-- Page 1 -->
+									<li>
+										<div class="textblock">
+											<p>Yash is one of the very talented and committed individuals who go beyond the duties to delight the people from their work and creation.</p><p> A versatile professional with unique talents of innovation and creativity, lots of innocence (rarity in this dog-eat-dog competitive world) and ever smiling face :) who is enjoying his journey of life.</p>
+											<p class="author">
+												<span class="theme-color"><a style="text-decoration: underline;" href="http://in.linkedin.com/pub/akhilesh-pathak/36/3b1/a04"> Akhilesh Pathak</a></span> (Client)
+											</p>
+										</div>
+									</li>
+									<!-- Page 2 -->
+									<li>
+										<div class="textblock">
+											<p>Yash was with Deloitte only for a brief time, but even in the short span he managed to get our attention with his passion and creativity.</p> <p>He is an amazing talent coupled with a very good attitude. It would be a pleasure to work with him again.</p>
+											<p class="author">
+												<span class="theme-color"><a style="text-decoration: underline;" href="http://in.linkedin.com/pub/srinagesh-satchidanand/1/12/b88"> SriNagesh Satchidanand</a></span> (Manager)
+											</p>
+										</div>
+									</li>
+								</ul> <!-- // #testimonials -->
+							</div> <!-- // .item -->
+							<!-- /Testimonials -->
                      </div>
+                     
                 </div>
                 <!-- /Resume --> 
                                         
