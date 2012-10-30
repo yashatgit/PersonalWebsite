@@ -628,9 +628,6 @@ select,
   line-height: 18px;
   color: #555555;
   border: 1px solid #cccccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 .uneditable-textarea {
   width: auto;

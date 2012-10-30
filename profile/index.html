@@ -4,7 +4,7 @@
 <head>
     
     <title>Profile YashSoni</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,10 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/fancybox.css"/>
     
-    <!
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
-    
     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <! Initialize the Testimonial Slider -->
+    
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.bxSlider.min.js" ></script>
+    <script type="text/javascript" src="js/init.js" ></script>
+    
+    
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
     <script type="text/javascript" src="js/respond.min.js"></script>
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>   
@@ -25,19 +29,14 @@
     <script type="text/javascript" src="js/custom.js"></script>
     
     
-    <! Initialize the Testimonial Slider -->
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/jquery.bxSlider.min.js" ></script>
-    <script type="text/javascript" src="js/cufon-yui.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
+   
     
+     
     <script type="text/javascript">
 		$(document).ready(function() {
 			$("#commentForm").validate({meta: "validate"});
 		});
-	</script>
-
-	
+	</script>	
 	<script type="text/javascript">var submitted=false;</script>
     
 </head>
@@ -76,7 +75,7 @@
                     	<div class="photo-inner"><img src="images/photo3.jpg"/></div>
                         <h1>YASH SONI</h1>
                         <h3>WEB DESIGNER & DEVELOPER</h3>
-                        <p>I like to make cool and creative designs. My design stash is always full of refreshing ideas. Feel free to take a look around my Vcard.</p>
+                        <p>I like to make clean and elegant designs which captures the idea effectively. My design stash is always full of refreshing ideas. Feel free to take a look around my vCard.</p>
                     </div>
                     <!-- /About section -->
                      
@@ -89,7 +88,7 @@
                         <li><label>Phone</label><span>+91 970 471 4944</span></li>
                         <li><label>Website</label><span style="text-decoration: underline;"><a href="http://www.yashsoni.com">www.yashsoni.com</a></span></li>
                     </ul>
-                    <span class="vcard"><img src="images\downloadVC.png"> </span>
+                    <div class="vcard"><img src="images/downloadVC.png"></div>
                     <!-- /Personal info section -->
                 </div>        
                 <!-- /Profile --> 
@@ -107,7 +106,7 @@
                 
                 <!-- Resume -->
                 <div id="resume">
-                <span class="resumeDl"><a href="..\documents\Resume_YashSoni.pdf" target="_new"><img src="images\downloadRS.png"></a></span>
+                <span class="resumeDl"><a href="..\documents\Resume_YashSoni.pdf" target="_new"><img src="images/downloadRS.png"></a></span>
                 	 <div class="timeline-section">
                         <!-- Timeline for Employment  -->   
                         <h3 class="main-heading"><span>Work Experience</span></h3>   
@@ -116,7 +115,7 @@
                                 <div class="timelineUnit">
                                     <h4><a style="text-decoration: underline;" href="http://www.sprinklr.com">Sprinklr</a><span class="timelineDate">2012 - Present</span></h4>
                                     <h5>UI Design Engineer</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                                    <p>Working on Creating user friendly Drag-n-Drop interfaces.</p>
                                 </div>
                             </li>
                             
@@ -147,9 +146,9 @@
                          <ul class="timeline">
                             <li>            
                                 <div class="timelineUnit">
-                                    <h4>B.Tech-Information and Communication Technology<span class="timelineDate">2008 - 2012</span></h4>
+                                    <h4>B.Tech - Information and Communication Technology<span class="timelineDate">2008 - 2012</span></h4>
                                     <h5><a style="text-decoration: underline;" href="http://www.daiict.ac.in">DA-IICT</a>, Gandhinagar, India</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet </p>
+                                    <p>Information and Communication Technology is an interdisciplinary degree with an integrated curriculum from the departments of Computer Science, Informational Technology, Computer Graphics and Media Arts.</p>
                                 </div>
                             </li>
                             
@@ -310,69 +309,121 @@
                     
                      <ul id="portfolio-filter">
                         <li><a href="" class="current" data-filter="*">All</a></li>
-                        <li><a href="" data-filter=".webdesign">WebDesign</a></li>
-                        <li><a href="" data-filter=".photoghraphy">Photoghraphy</a></li>
-                        <li><a href="" data-filter=".illustration">Illustration</a></li>
                         <li><a href="" data-filter=".print">Print</a></li>
                         <li><a href="" data-filter=".animation">Animation</a></li>
+                        <li><a href="" data-filter=".painting">Paintings</a></li>
+                        <li><a href="" data-filter=".games">Games</a></li>
                     </ul>
                     
                     
                     <ul id="portfolio-list">
-                        <li class="illustration print">
-                            <a href="portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
-                                <img src="portfolio/1-thumb.jpg" alt="">
-                                <h2 class="title">Hello Goodbye</h2>
-                                <span class="categorie">Print / Illustration</span> 
-                            </a>
-                    	</li>
-                        <li class="webdesign">
-                            <a href="http://www.youtube.com/embed/c9MnSeYYtYY?autoplay=1" rel="portfolio" class="folio iframe">
-                                <img src="portfolio/3-thumb.jpg" alt="" >
-                                <h2 class="title">Snow time</h2>
-                                <span class="categorie">Webdesign</span> 
-                            </a>
-                    	</li>                        
-                        <li class="photoghraphy">
-                            <a href="http://www.google.com" rel="portfolio" target="_new">
-                                <img src="portfolio/2-thumb.jpg" alt="" >                            
-                                <h2 class="title">Help us</h2>
-                                <span class="categorie">Photography</span> 
-                            </a>
-                    	</li>
-                        <li class="animation print">
-                            <a href="portfolio/4.jpg" rel="portfolio" class="folio">
-                                <img src="portfolio/4-thumb.jpg" alt="" >
-                                <h2 class="title">Sunshine</h2>
-                                <span class="categorie">Print / Animation</span> 
-                            </a>
-                    	</li>
+                        
+                    	
+                    	<!----------------- Animation ----------------------->
                         <li class="animation">
-                            <a href="portfolio/5.jpg" rel="portfolio" class="folio">
-                                <img src="portfolio/5-thumb.jpg" alt="" >
-                                <h2 class="title">Come together</h2>
+                            <a href="http://www.youtube.com/embed/JB7D0UF6sSk?autoplay=1" rel="portfolio" class="folio iframe">
+                                <img src="portfolio/a1-thumb.jpg" alt="" >
+                                <h2 class="title">Surprize in a Box</h2>
                                 <span class="categorie">Animation</span> 
                             </a>
-                    	</li>
-                        <li class="webdesign print">
-                            <a href="portfolio/6.jpg" rel="portfolio" class="folio">
-                                <img src="portfolio/6-thumb.jpg" alt="" >
-                                <h2 class="title">The yellow</h2>
-                                <span class="categorie">Webdesign / Print</span> 
+                    	</li>                   
+                        <li class="animation games">
+                            <a href="http://www.youtube.com/embed/0PQRHLpv5SQ?autoplay=1" title="Game using Panda3D game engine" rel="portfolio" class="folio iframe">
+                                <img src="portfolio/a2-thumb.jpg" alt="" >
+                                <h2 class="title">Space Recyclers</h2>
+                                <span class="categorie">Animation / Game</span> 
                             </a>
                     	</li>
-                        <li class="photoghraphy">
-                            <a href="portfolio/7.jpg" rel="portfolio" class="folio">
-                                <img src="portfolio/7-thumb.jpg" alt="" >
-                                <h2 class="title">Black bird</h2>
-                                <span class="categorie">Photoghraphy</span> 
+                    	<li class="animation games">
+                            <a href="http://www.youtube.com/embed/f6zsGpNqtO0?start=150" title="Microsoft Kinect based Rehabilitation Game" rel="portfolio" class="folio iframe">
+                                <img src="portfolio/a3-thumb.jpg" alt="" >
+                                <h2 class="title">KinectoTherapy</h2>
+                                <span class="categorie">Animation / Game</span> 
+                            </a>
+                    	</li> 
+                        
+                        
+                    	
+                    	<!----------------- Games ----------------------->
+                        <li class="games">
+                            <a href="portfolio/g1.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/g1-thumb.jpg" alt="" >
+                                <h2 class="title">Breakout!</h2>
+                                <span class="categorie">Games</span> 
                             </a>
                     	</li>
-                        <li class="illustration">
-                            <a href="portfolio/8.jpg" rel="portfolio" class="folio">
-                                <img src="portfolio/8-thumb.jpg" alt="" >
-                                <h2 class="title">Revolution</h2>
-                                <span class="categorie">Illustration</span> 
+                    	
+                    	<li class="games">
+                            <a href="portfolio/g2.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/g2-thumb.jpg" alt="" >
+                                <h2 class="title">Java Games</h2>
+                                <span class="categorie">Games</span> 
+                            </a>
+                    	</li>
+                    	
+                    	<!----------------- Painting ----------------------->
+                    	<li class="painting">
+                            <a href="portfolio/p1.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/p1-thumb.jpg" alt="" >
+                                <h2 class="title">Silent Prawl</h2>
+                                <span class="categorie">Painting</span> 
+                            </a>
+                    	</li>
+                    	<li class="painting">
+                            <a href="portfolio/p2.jpg" title="Hung at Adobe Office's Wall of Fame" rel="portfolio" class="folio">
+                                <img src="portfolio/p2-thumb.jpg" alt="" >
+                                <h2 class="title">Serenity</h2>
+                                <span class="categorie">Painting</span> 
+                            </a>
+                    	</li>
+                    	<li class="painting">
+                            <a href="portfolio/p3.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/p3-thumb.jpg" alt="" >
+                                <h2 class="title">The Story</h2>
+                                <span class="categorie">Painting</span> 
+                            </a>
+                    	</li>
+                    	<li class="painting">
+                            <a href="portfolio/p4.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/p4-thumb.jpg" alt="" >
+                                <h2 class="title">Hulk!</h2>
+                                <span class="categorie">Painting</span> 
+                            </a>
+                    	</li>
+                    	
+                    	<!----------------- Print ----------------------->
+                    	<li class="print">
+                            <a href="portfolio/b1.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/b1-thumb.jpg" alt="" >
+                                <h2 class="title">Hungry Panda</h2>
+                                <span class="categorie">Print</span> 
+                            </a>
+                    	</li>
+                    	<li class="print">
+                            <a href="portfolio/b2.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/b2-thumb.jpg" alt="" >
+                                <h2 class="title">BMW</h2>
+                                <span class="categorie">Print</span> 
+                            </a>
+                    	</li>
+                    	<li class="print">
+                            <a href="portfolio/b3.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/b3-thumb.jpg" alt="" >
+                                <h2 class="title">The Combo</h2>
+                                <span class="categorie">Print</span> 
+                            </a>
+                    	</li><li class="print">
+                            <a href="portfolio/b4.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/b4-thumb.jpg" alt="" >
+                                <h2 class="title">Wireless</h2>
+                                <span class="categorie">Print</span> 
+                            </a>
+                    	</li>
+                    	<li class="print">
+                            <a href="portfolio/b5.jpg" rel="portfolio" class="folio">
+                                <img src="portfolio/b5-thumb.jpg" alt="" >
+                                <h2 class="title">Forage</h2>
+                                <span class="categorie">Print</span> 
                             </a>
                     	</li>
                     </ul>
@@ -386,7 +437,7 @@
                     <div class="contact-info">
                     <h3 class="main-heading"><span>Contact info</span></h3>
                 	<ul>
-                        <li>Gurgaon, India<br /><br /></li>
+                        <li>Gurgaon, India</li>
                         <li>Email: <a href="mailto:mailme@yashsoni.com">mailme@yashsoni.com</a></li>
                         <li>Phone: +91 970 471 4944</li>
                         <li>Website: <a href="http://www.yashsoni.com" style="text-decoration: underline;">www.yashsoni.com</a></li>
