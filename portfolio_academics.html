@@ -113,7 +113,7 @@ The project has also got <strong>wide Media Coverage</strong> in forms of News-P
 More details about the project can be found at <a href="http://www.kinectotherapy.in" target="_new">www.kinectotherapy.in</a><br><br>
 <p><strong>Few screenshots of the Exercise Routines</strong></p>
 
-							<div id="myCarousel" class="carousel slide" style="width:742px; height:442px;">
+							<div id="kinectoTherapyCarousel" class="carousel slide" style="width:742px; height:442px;">
                                 <div class="carousel-inner">
                                   <div class="item active">
                                     <img src="images/KinectoTherapy/01.jpg" alt="">
@@ -152,8 +152,8 @@ More details about the project can be found at <a href="http://www.kinectotherap
                                     </div>
                                   </div>
                                 </div>
-                                <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="font-size:40px;"><</a>
-                                <a class="right carousel-control" href="#myCarousel" data-slide="next" style="font-size:40px;">></a>
+                                <a class="left carousel-control" href="#kinectoTherapyCarousel" data-slide="prev" style="padding:0 0 10px">&lsaquo;</a>
+                                <a class="right carousel-control" href="#kinectoTherapyCarousel" data-slide="prev" style="padding:0 0 10px">&rsaquo;</a>
                               
                         </div>     
                             </p>                                    							
@@ -590,7 +590,7 @@ I successfully created the following designs for Hungry Panda.
                           	  </table>
                               <p>&nbsp;</p>
                               <p>Few designs of Hungry Panda and BMW</p>
-                              <div id="myCarousel1" class="carousel slide" style="width:700px; height:470px;">
+                              <div id="hungryPandaCarousel" class="carousel slide" style="width:700px; height:470px;">
                                 <div class="carousel-inner">
                                   <div class="item active">
                                     <img src="images/freelancing/01.jpg" alt="">
@@ -650,8 +650,8 @@ I successfully created the following designs for Hungry Panda.
                                     </div>
                                   </div>
                                 </div>
-                                <a class="left carousel-control" href="#myCarousel1" data-slide="prev" style="font-size:40px;"><</a>
-                                <a class="right carousel-control" href="#myCarousel1" data-slide="next" style="font-size:40px;">></a>
+                                <a class="left carousel-control" href="#hungryPandaCarousel" data-slide="prev" style="padding:0 0 10px">&lsaquo;</a>
+                                <a class="right carousel-control" href="#hungryPandaCarousel" data-slide="next" style="padding:0 0 10px">&rsaquo;</a>
                               
                         </div> 
                             	<p>&nbsp;</p>
@@ -686,20 +686,15 @@ I successfully created the following designs for Hungry Panda.
 <!-- ==============================================
 		 JavaScript below! 															-->
 
-<!-- jQuery via Google + local fallback, see h5bp.com -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-
-<!-- Bootstrap JS: compiled and minified -->
-    <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+  	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <script type="text/javascript"> 
    $(document).ready(function() {
-	$('.carousel').carousel({
-        
-    });
+		$('#kinectoTherapyCarousel').carousel({pause: "hover"});
+		$('#hungryPandaCarousel').carousel({pause: "hover"});   
    });
 </script>
+  
   </body>
 </html>
