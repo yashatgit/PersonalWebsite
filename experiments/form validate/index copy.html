@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>jQuery Validate Example | aLittleCode</title>
+    
+	  <meta name="viewport" content="width=device-width">
+
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+		var submitted=false;
+	</script>
+
+  </head>
+  <body>
+		<div class="container">
+				<div class="row">
+				<div class="span8">
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+								onload="if(submitted){window.location='thankyou.html';}"></iframe>
+					<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dGRpODBWSVpSVjVBYXdzc2t6U0RmTFE6MQ&amp;ifq" method="POST" target="hidden_iframe" id="commentForm" onsubmit="submitted=true;">
+					  <fieldset>
+					    <legend>Sample Contact Form <small>(will not submit any information)</small></legend>
+					    <div class="control-group">
+					      <label class="control-label" for="entry_0">Your Name</label>
+					      <div class="controls">
+					        <input type="text" class="input-xlarge ss-q-short" name="entry.0.single" id="entry_0">
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="entry_1">Email Address</label>
+					      <div class="controls">
+					        <input type="text" class="input-xlarge ss-q-short" name="entry.1.single" id="entry_1">
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="entry_2">Your Message</label>
+					      <div class="controls">
+					        <textarea class="input-xlarge ss-q-long" name="entry.2.single" id="entry_2" rows="3"></textarea>
+					      </div>
+					    </div>
+              <div class="form-actions">
+		            <button type="submit" class="btn btn-primary btn-large">Submit</button>
+    			      <button class="btn">Cancel</button>
+        			</div>
+					  </fieldset>
+					</form> 
+				</div><!-- .span8 -->
+				</div>
+    </div> <!-- .container -->
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+	  <script src="assets/js/jquery-1.7.1.min.js"></script>
+
+<!-- Validate plugin -->
+		<script src="assets/js/jquery.validate.min.js"></script>
+		
+		<script type="text/javascript">
+		var submitted=false;
+		$(document).ready(function() {
+			$('#contact-form').validate({
+				    rules: {
+				    meta: "validate",
+				      'entry.0.single': {
+				        minlength: 2,
+				        required: true
+				      },
+				      'entry.1.single': {
+				        required: true,
+				        email: true
+				      },
+				      'entry.2.single': {
+				        minlength: 2,
+				        required: true
+				      }
+				    },
+				    highlight: function(label) {
+				    	$(label).closest('.control-group').addClass('error');
+				    },
+				    success: function(label) {
+				    	label
+				    		.text('OK!').addClass('valid')
+				    		.closest('.control-group').addClass('success');
+				    }
+				  });
+		});
+	</script>
+
+
+  </body>
+</html>
