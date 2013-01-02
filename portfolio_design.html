@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Yash Soni's Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    
-<!-- Mobile viewport optimized: h5bp.com/viewport -->
-	  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <!-- Main stylesheet imports bootstrap css and adds custom -->
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/style_showcase.css" />
-	<link rel="stylesheet" href="css/glisse.css?1" />
+    <link rel="stylesheet" href="css/glisse.css?1" />
     <link rel="stylesheet" href="css/app_glisse.css?1" />
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 
@@ -21,163 +19,153 @@
     <script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
     <script>
         $(function () {
-            $('.tl').glisse({speed: 500, changeSpeed: 550, effect:'fade', fullscreen: false}); 
+            $('.tl').glisse({speed: 500, changeSpeed: 550, effect:'fade', fullscreen: false});
             /*
-			$('#changefx').change(function() {
-                var val = $(this).val();
-                $('.tl').each(function(){
-                    $(this).data('glisse').changeEffect(val);
-                });
-            });
-			*/
+             $('#changefx').change(function() {
+             var val = $(this).val();
+             $('.tl').each(function(){
+             $(this).data('glisse').changeEffect(val);
+             });
+             });
+             */
         });
     </script>
     <script>
-    $(document).ready(function(e) {      
-	    $("a[rel=example_group]").fancybox({
-	        'transitionIn'        : 'none',
-	        'transitionOut'        : 'none',
-	        'titlePosition'     : 'over',
-	        'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
-	            return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
-	        }
-	    });
-    });
-    </script>    
+        $(document).ready(function(e) {
+            $("a[rel=example_group]").fancybox({
+                'transitionIn'      : 'none',
+                'transitionOut'     : 'none',
+                'titlePosition'     : 'over',
+                'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' +  (currentIndex + 1) + ' / ' + currentArray.length + ' ' + title + '</span>';
+                }
+            });
+        });
+    </script>
 
-  </head>
+</head>
 
-  <body class="bodybg">
-  <div class="wrapper">
-  <div id="header">      	
-		<div id="hnavbar">    
-             <ul id="hnavlist">
-                  <li id="home"><a href="home.html"></a></li>
-                  <li id="portfolio"><a href="portfolio.html"></a></li>
-                  <li id="about"><a href="about.html"></a></li>
-                  <li id="contact"><a href="contact.html"></a></li>
-             </ul>             
+<body class="bodybg">
+<div class="wrapper">
+    <div id="header">
+        <div id="hnavbar">
+            <ul id="hnavlist">
+                <li id="home"><a href="home.html"></a></li>
+                <li id="portfolio"><a href="portfolio.html"></a></li>
+                <li id="about"><a href="about.html"></a></li>
+                <li id="contact"><a href="contact.html"></a></li>
+            </ul>
         </div>
-   </div>
-   
-   <div id="logo" class="hidden-phone"></div>
+    </div>
+
+    <div id="logo" class="hidden-phone"></div>
     <div id="logo_small" class="visible-phone"></div>
-   
-   <div id="portfolio_line"> </div>
+    <div id="portfolio_line"></div>
 
-    		
-		<div class="container-fluid" style="padding-top:100px; max-width:960px;margin-left:auto; margin-right:auto;">
-		 	<div class="row-fluid">
-				<a href="portfolio_academics.html"><img src="images/portfolio_logo/portfolio_acad.png" style="right:2%; position:absolute"></a>
-                
-				<div id="content_glisse">
-					<ul class="stack" data-count="3">
-						<li><img src="images/portfolio_logo/DigitalPaintings.png" rel="group1" data-glisse-big="images/Paintings1/16.jpg" class="tl" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" /></li>
-						<li><img src="images/Paintings1/16_t.jpg" rel="group1" data-glisse-big="images/Paintings1/15.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="images/Paintings1/14_t.jpg" rel="group1" data-glisse-big="images/Paintings1/14.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="images/Paintings1/13_t.jpg" rel="group1" data-glisse-big="images/Paintings1/13.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/12.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/11.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/10.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/09.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/08.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/07.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/06.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/05.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/04.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/03.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/02.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-						<li><img src="#" rel="group1" data-glisse-big="images/Paintings1/01.jpg" class="tl" title="Cum sociis natoque penatibus et magnis" /></li>
-					</ul>
-					<ul class="stack" data-count="8">
-						<li><img src="images/portfolio_logo/GameDesign.png" rel="group2" data-glisse-big="images/gamesnapps/01.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="images/gamesnapps/01_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/02.jpg" class="tl" title="Aenean massa" /></li>
-						<li><img src="images/gamesnapps/02_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/03.jpg" class="tl" title="Lorem ipsum dolor sit amet" /></li>
-						<li><img src="images/gamesnapps/01_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/04.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/05.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/06.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/07.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/08.jpg" class="tl" title="Dis parturient montes" /></li>
-					</ul>
-					<ul class="stack" data-count="9">
-						<li><img src="images/portfolio_logo/CorporateBranding.png" rel="group3" data-glisse-big="images/freelancing/01.jpg" class="tl" title="Aenean commodo ligula eget dolor" /></li>
-						<li><img src="images/freelancing/01_t.jpg" rel="group3" data-glisse-big="images/freelancing/02.jpg" class="tl" title="Aenean massa" /></li>
-						<li><img src="images/freelancing/02_t.jpg" rel="group3" data-glisse-big="images/freelancing/03.jpg" class="tl" title="Lorem ipsum dolor sit amet" /></li>
-						<li><img src="images/freelancing/03_t.jpg" rel="group3" data-glisse-big="images/freelancing/04.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group3" data-glisse-big="images/freelancing/05.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group3" data-glisse-big="images/freelancing/06.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group3" data-glisse-big="images/freelancing/07.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group3" data-glisse-big="images/freelancing/08.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group3" data-glisse-big="images/freelancing/09.jpg" class="tl" title="Dis parturient montes" /></li>
-					</ul>
-					<ul class="stack" data-count="16">
-						<li><img src="images/portfolio_logo/PostersFlyers.png" rel="group4" data-glisse-big="images/posters/01.jpg" class="tl" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" /></li>
-						<li><img src="images/posters/01_t.jpg" rel="group4" data-glisse-big="images/posters/02.jpg" class="tl" title="Aenean massa" /></li>
-						<li><img src="images/posters/02_t.jpg" rel="group4" data-glisse-big="images/posters/03.jpg" class="tl" title="Lorem ipsum dolor sit amet" /></li>
-						<li><img src="images/posters/02_t.jpg" rel="group4" data-glisse-big="images/posters/04.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="images/posters/01_t.jpg" rel="group4" data-glisse-big="images/posters/05.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/06.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/07.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/08.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/09.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/10.jpg" class="tl" title="Aenean massa" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/11.jpg" class="tl" title="Lorem ipsum dolor sit amet" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/12.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/13.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/14.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/15.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group4" data-glisse-big="images/posters/16.jpg" class="tl" title="Dis parturient montes" /></li>
-					</ul>
-					
-					<ul class="stack" data-count="6">
-						<li><img src="images/portfolio_logo/Tshirt.png"     rel="group5" data-glisse-big="images/tees/01.jpg" class="tl" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" /></li>
-						<li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/02.jpg" class="tl" title="Aenean massa" /></li>
-						<li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/03.jpg" class="tl" title="Lorem ipsum dolor sit amet" /></li>
-						<li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/04.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/05.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group5" data-glisse-big="images/tees/06.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group5" data-glisse-big="images/tees/07.jpg" class="tl" title="Dis parturient montes" /></li>
-						<li><img src="#" rel="group5" data-glisse-big="images/tees/08.jpg" class="tl" title="Dis parturient montes" /></li>
-					</ul>
-					<ul class="stack" data-count="7">
-						<a rel="example_group" class="various iframe" href="http://player.vimeo.com/video/25338757?title=0&amp;byline=0&amp;portrait=0"> <img src="images/portfolio_logo/VideoAnimations.png" /> </a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/_WQnooSoQYI"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/JB7D0UF6sSk"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/X3n_EeNcMAA"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/ufHjSTw827U"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/iUNnQbipQ1A"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/UlDvNisBZzw"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/mod3F-LkyaM"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/taS0-sUxBf0"></a>
-						<a rel="example_group" title="Title of video here" class="various iframe" href="http://www.youtube.com/embed/TTR_ujzSxKI"></a>
-					</ul>
-				</div><!-- Content -->						
-				
-								
-				
-			</div><!-- .row-fluid -->
-			
+    <div class="container-fluid" style="padding-top:100px; max-width:960px;margin-left:auto; margin-right:auto;">
+        <div class="row-fluid">
+            <!--<a href="portfolio_academics.html"><img src="images/portfolio_logo/portfolio_acad.png" style="right:2%; position:absolute"></a>-->
+
+            <div id="content_glisse">
+                <ul class="stack" data-count="3">
+                    <li><img src="images/portfolio_logo/DigitalPaintings.png" rel="group1" data-glisse-big="images/Paintings1/16.jpg" class="tl"  /></li>
+                    <li><img src="images/Paintings1/16_t.jpg" rel="group1" data-glisse-big="images/Paintings1/15.jpg" class="tl"  /></li>
+                    <li><img src="images/Paintings1/14_t.jpg" rel="group1" data-glisse-big="images/Paintings1/14.jpg" class="tl"  /></li>
+                    <li><img src="images/Paintings1/13_t.jpg" rel="group1" data-glisse-big="images/Paintings1/13.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/12.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/11.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/10.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/09.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/08.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/07.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/06.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/05.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/04.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/03.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/02.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group1" data-glisse-big="images/Paintings1/01.jpg" class="tl"  /></li>
+                </ul>
+                <ul class="stack" data-count="8">
+                    <li><img src="images/portfolio_logo/GameDesign.png" rel="group2" data-glisse-big="images/gamesnapps/01.jpg" class="tl"  /></li>
+                    <li><img src="images/gamesnapps/01_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/02.jpg" class="tl"  /></li>
+                    <li><img src="images/gamesnapps/02_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/03.jpg" class="tl"  /></li>
+                    <li><img src="images/gamesnapps/01_t.jpg" rel="group2" data-glisse-big="images/gamesnapps/04.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/05.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/06.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/07.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group2" data-glisse-big="images/gamesnapps/08.jpg" class="tl"  /></li>
+                </ul>
+                <ul class="stack" data-count="9">
+                    <li><img src="images/portfolio_logo/CorporateBranding.png" rel="group3" data-glisse-big="images/freelancing/01.jpg" class="tl"  /></li>
+                    <li><img src="images/freelancing/01_t.jpg" rel="group3" data-glisse-big="images/freelancing/02.jpg" class="tl"  /></li>
+                    <li><img src="images/freelancing/02_t.jpg" rel="group3" data-glisse-big="images/freelancing/03.jpg" class="tl"  /></li>
+                    <li><img src="images/freelancing/03_t.jpg" rel="group3" data-glisse-big="images/freelancing/04.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group3" data-glisse-big="images/freelancing/05.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group3" data-glisse-big="images/freelancing/06.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group3" data-glisse-big="images/freelancing/07.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group3" data-glisse-big="images/freelancing/08.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group3" data-glisse-big="images/freelancing/09.jpg" class="tl"  /></li>
+                </ul>
+                <ul class="stack" data-count="16">
+                    <li><img src="images/portfolio_logo/PostersFlyers.png" rel="group4" data-glisse-big="images/posters/01.jpg" class="tl"  /></li>
+                    <li><img src="images/posters/01_t.jpg" rel="group4" data-glisse-big="images/posters/02.jpg" class="tl"  /></li>
+                    <li><img src="images/posters/02_t.jpg" rel="group4" data-glisse-big="images/posters/03.jpg" class="tl"  /></li>
+                    <li><img src="images/posters/02_t.jpg" rel="group4" data-glisse-big="images/posters/04.jpg" class="tl"  /></li>
+                    <li><img src="images/posters/01_t.jpg" rel="group4" data-glisse-big="images/posters/05.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/06.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/07.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/08.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/09.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/10.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/11.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/12.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/13.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/14.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/15.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group4" data-glisse-big="images/posters/16.jpg" class="tl"  /></li>
+                </ul>
+
+                <ul class="stack" data-count="6">
+                    <li><img src="images/portfolio_logo/Tshirt.png"     rel="group5" data-glisse-big="images/tees/01.jpg" class="tl"  /></li>
+                    <li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/02.jpg" class="tl"  /></li>
+                    <li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/03.jpg" class="tl"  /></li>
+                    <li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/04.jpg" class="tl"  /></li>
+                    <li><img src="images/tees/01_t.jpg" rel="group5" data-glisse-big="images/tees/05.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group5" data-glisse-big="images/tees/06.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group5" data-glisse-big="images/tees/07.jpg" class="tl"  /></li>
+                    <li><img src="#" rel="group5" data-glisse-big="images/tees/08.jpg" class="tl"  /></li>
+                </ul>
+                <ul class="stack" data-count="7">
+                    <a rel="example_group" class="various iframe" href="http://player.vimeo.com/video/25338757?title=0&amp;byline=0&amp;portrait=0"> <img src="images/portfolio_logo/VideoAnimations.png" /> </a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/_WQnooSoQYI"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/JB7D0UF6sSk"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/X3n_EeNcMAA"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/ufHjSTw827U"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/iUNnQbipQ1A"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/UlDvNisBZzw"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/mod3F-LkyaM"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/taS0-sUxBf0"></a>
+                    <a rel="example_group"  class="various iframe" href="http://www.youtube.com/embed/TTR_ujzSxKI"></a>
+                </ul>
+            </div><!-- Content -->
+
+
+
+        </div><!-- .row-fluid -->
+
     </div> <!-- .container -->
-	<div class="push"></div>
-    </div><!-- wrapper -->
+    <div class="push"></div>
+</div><!-- wrapper -->
 
 
-		<footer>
-			<hr>
-			<div class="container-fluid" align="center">
-				<p>
-					&copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-				</p>
-			</div>
-		</footer>
+<footer>
+    <hr>
+    <div class="container-fluid" align="center">
+        <p>
+            &copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
 
-	
-
-    
-
-<!-- ==============================================
-		 JavaScript below! 															-->
-
-
-  </body>
+</body>
 </html>

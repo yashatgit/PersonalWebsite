@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <title>Yash Soni's Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    
-<!-- Mobile viewport optimized: h5bp.com/viewport -->
-	  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-<!-- Main stylesheet imports bootstrap css and adds custom -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.spritely-0.1.js"></script>
     
-    <style>
-    	/* To keep short panes open decently tall */
-    	.tab-pane {min-height: 400px;}
-    </style>
-   
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.spritely-0.1.js"></script>
-    <style>
-		#anim1 {
-			width: 337px;
-			height: 262px;
-			background: transparent url(images/anim1.png) 0 0px no-repeat;
-		}
-		#anim2 {
-			width: 337px;
-			height: 262px;
-			background: transparent url(images/anim2.png) 0 0px no-repeat;
-		}
-    </style>
     <script type="text/javascript">
-		(function($) {
-			$(document).ready(function() {
-				$('#anim1').sprite({fps: 1.5, no_of_frames: 4});
-				$('#anim2').sprite({fps: 2, no_of_frames: 7});							
-			});
-		})(jQuery);
-	</script>
-  </head>
-  <body class="bodybg">
-  <div class="wrapper">
-    
-		<div id="header">      	
-			<div id="hnavbar">    
-				 <ul id="hnavlist">
-					  <li id="home"><a href="home.html"></a></li>
-					  <li id="portfolio"><a href="portfolio.html"></a></li>
-					  <li id="about"><a href="about.html"></a></li>
-					  <li id="contact"><a href="contact.html"></a></li>
-				 </ul>             
-			</div>
-		</div>   
-		<div id="logo" class="hidden-phone"></div>
-		<div id="logo_small" class="visible-phone"></div>
-   
-		<div id="portfolio_line"> </div>
+        (function ($) {
+            $(document).ready(function () {
+                $('#anim1').sprite({fps:1.5, no_of_frames:4});
+                $('#anim2').sprite({fps:2, no_of_frames:7});
+            });
+        })(jQuery);
+    </script>
+</head>
+<body class="bodybg">
+<div class="wrapper">
 
-    		
-	<div class="container-fluid" style="padding-top:100px; margin-left:auto; margin-right:auto; max-width:1160px;">    
-		<div class="row-fluid">
-			<div id="twoanim" class="grid_9">     
-			  <table border="0" class="center" style="margin-left:auto; margin-right:auto;">
-				<tr>
-				  <td width="340">
-					<a href="portfolio_academics.html"><div id="anim2"></div></a>
-				  </td>
-				  
-				  <td width="80">&nbsp;</td>
-				  
-				  <td width="340">
-					<a href="portfolio_design.html"><div id="anim1"></div></a>
-				  </td>
-				</tr>
-				
-				<tr>
-				  <td width="340"><a href="portfolio_academics.html">Click to see some of my projects (Research,Academic,Industrial)</a></td>
-				  <td width="40">&nbsp;</td>
-				  <td width="340"><a href="portfolio_design.html">Click  to see some of my hobby work (Paintings,Games,Designs etc.)</a></td>
-				</tr>
-			  </table><br/><br/><br/><br/><br/>
-			</div>
-		</div><!-- .row-fluid -->
-	</div> <!-- .container -->
-		<div class="push"></div>
-    </div><!-- wrapper -->
+    <div id="header">
+        <div id="hnavbar">
+            <ul id="hnavlist">
+                <li id="home"><a href="home.html"></a></li>
+                <li id="portfolio"><a href="portfolio.html"></a></li>
+                <li id="about"><a href="about.html"></a></li>
+                <li id="contact"><a href="contact.html"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="logo" class="hidden-phone"></div>
+    <div id="logo_small" class="visible-phone"></div>
 
+    <div id="portfolio_line"></div>
 
-		<footer>
-			<hr>
-			<div class="container-fluid" align="center">
-				<p>
-					&copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-				</p>
-			</div>
-		</footer>
-  </body>
+    <div class="container-fluid" style="padding-top:100px; margin-left:auto; margin-right:auto; max-width:1160px;">
+        <div class="row-fluid">
+            <div id="twoanim" class="grid_9">
+                <table border="0" class="center" style="margin-left:auto; margin-right:auto;">
+                    <tr>
+                        <td width="340">
+                            <a href="portfolio_academics.html">
+                                <div id="anim2"></div>
+                            </a>
+                        </td>
+
+                        <td width="80">&nbsp;</td>
+
+                        <td width="340">
+                            <a href="portfolio_design.html">
+                                <div id="anim1"></div>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="340"><a href="portfolio_academics.html">Click to see some of my projects
+                            (Research,Academic,Industrial)</a></td>
+                        <td width="40">&nbsp;</td>
+                        <td width="340"><a href="portfolio_design.html">Click to see some of my hobby work
+                            (Paintings,Games,Designs etc.)</a></td>
+                    </tr>
+                </table>
+                <br/><br/><br/><br/><br/>
+            </div><!-- .twoanim -->
+        </div><!-- .row-fluid -->
+    </div><!-- .container -->
+    <div class="push"></div>
+</div><!-- wrapper -->
+
+<footer>
+    <hr>
+    <div class="container-fluid" align="center">
+        <p>
+            &copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a
+                href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a
+                href="contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
+</body>
 </html>

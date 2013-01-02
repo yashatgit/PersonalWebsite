@@ -1,42 +1,39 @@
-/* =======================================
-
-		Main Stylesheet for My-Bootstrap-Site
-		
-		Innovations on Twitter Bootstrap
-		
-========================================== */
-
 @import url('bootstrap.css');
 @import url('bootstrap-responsive.css');
 
 /*	Navbar Adjustments
 		============================================= */
 
-		/* Top Padding for responsive navbar-top-fixed */
-				body { /* Add top padding for full-width layout */
-					/*padding-top: 60px;*/
-					padding-bottom: 0px;
-				}
-				@media (max-width: 979px) {
-				  body {
-				    padding-top: 0;
-				  }
-				}
+		
+		@media (max-width: 979px) {
+		  body {
+		    padding-top: 0;
+		  }
+		}
+		@media (max-width: 767px) {
+		  body {
+		    padding-right: 20px;
+		    padding-left: 0px;
+		  }
+		  .container-fluid{
+			  margin-left: 20px !important;
+		  }
+		}
 
-				@media (max-width: 480px) {
-					/* size down hero unit contents to fit a narrow viewport */
-  			  .hero-unit {
-					  padding: 0;
-					  margin: 0;
-					  background: transparent;
-				  }
-				  .hero-unit h1 {
-					  font-size: 250%;
-				  }
-				  .hero-unit h2 {
-					  font-size: 180%;
-				  }
-				}
+		@media (max-width: 480px) {
+			/* size down hero unit contents to fit a narrow viewport */
+		  .hero-unit {
+			  padding: 0;
+			  margin: 0;
+			  background: transparent;
+		  }
+		  .hero-unit h1 {
+			  font-size: 250%;
+		  }
+		  .hero-unit h2 {
+			  font-size: 180%;
+		  }
+		}
 
 
 /* 	Typography Tweaks
@@ -45,34 +42,30 @@
 			font-weight: bold;
 		}
 		a.btn:hover {
-				/* Transition for hovers */
-					-webkit-transition: all 0.3s ease;
-					-moz-transition: all 0.3s ease;
-					-o-transition: all 0.3s ease;
-					transition: all 0.3s ease;
+		/* Transition for hovers */
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
 		}
 		a:focus{
 			outline: none;
 		}
-
-/* 	Rows and Columns
-		============================================ */
-		.row { /* more top and bottom padding on rows */
-			padding: 20px 0;
+		
+		h1, h2, h3, h4, h5, h6{
+			margin: 0px;
 		}
+		h3{
+			font-size: 18px;
+			line-height: 27px;
+		}
+
 	
 /* 	Pills and Tabs
 		============================================ */
 
-		.tab-content {
-/*
-		    display: table;
-		    max-width: 90%;
-*/
-		}
-		.tab-content > .active,
-		.pill-content > .active {
-/* 	    display: inline-block; */
+		.nav-pills li a{
+			border-radius: 0px !important;
 		}
 		.nav-pills li a h3 {
 			font-size: 14px;
@@ -97,119 +90,55 @@
 			margin-left: -10px;
 			padding-left: 20px;
 		}
+		
+		hr {
+		    margin:0px 80px !important;
+		    border: 0;
+			border-top: 1px solid #BDBDBD;
+			border-bottom: 1px solid #ffffff;
+			 
+		}
+		
+		select,input,textarea,.well,.btn{
+			border-radius: 0px !important; 
+		}
+		
+		.nav > li > a:hover{
+			background-color: #D1D1D1;
+		}
 	
 
-
-/* 	For Code Snippets
-		============================================ */
 		
-		code, pre, pre.prettyprint {
-			background-color: #fee9cc;
-		}
-		pre, pre.prettyprint {
-			padding: 16px 20px;
-			margin: 10px 0;
-			-webkit-border-radius: 6px;	
-			-moz-border-radius: 6px;
-			border-radius: 6px;
-			max-width: 100%;
-		}
-		
-		.alert pre {
-			text-shadow: none;
-		}
-		
-		/* Pretty printing styles. Used with prettify.js. */
-		
-		/* SPAN elements with the classes below are added by prettyprint. */
-		.pln { color: #000 }  /* plain text */
-		
-		@media screen {
-		  .str { color: #080 }  /* string content */
-		  .kwd { color: #008 }  /* a keyword */
-		  .com { color: #800 }  /* a comment */
-		  .typ { color: #606 }  /* a type name */
-		  .lit { color: #066 }  /* a literal value */
-		  /* punctuation, lisp open bracket, lisp close bracket */
-		  .pun, .opn, .clo { color: #660 }
-		  .tag { color: #008 }  /* a markup tag name */
-		  .atn { color: #606 }  /* a markup attribute name */
-		  .atv { color: #080 }  /* a markup attribute value */
-		  .dec, .var { color: #606 }  /* a declaration; a variable name */
-		  .fun { color: red }  /* a function name */
-		}
-		
-		/* Use higher contrast and text-weight for printable form. */
-		@media print, projection {
-		  .str { color: #060 }
-		  .kwd { color: #006; font-weight: bold }
-		  .com { color: #600; font-style: italic }
-		  .typ { color: #404; font-weight: bold }
-		  .lit { color: #044 }
-		  .pun, .opn, .clo { color: #440 }
-		  .tag { color: #006; font-weight: bold }
-		  .atn { color: #404 }
-		  .atv { color: #060 }
-		}
-
-		pre.prettyprint { /* customized by DC */
-			/* padding: 2px;
-			border: 1px solid #888  */
-			}
-				
-		/* Specify class=linenums on a pre to get line numbering */
-		ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
-		li.L0,
-		li.L1,
-		li.L2,
-		li.L3,
-		li.L5,
-		li.L6,
-		li.L7,
-		li.L8 { list-style-type: none }
-		/* Alternate shading for lines */
-		li.L1,
-		li.L3,
-		li.L5,
-		li.L7,
-		li.L9 { background: #eee }
-		
-/* 	
-		===============================================My CSS Starts here===================================================================== */		
-/*
-.bodybg{
-	  background-image:url(../images/back1.png);
-	  background-repeat:repeat;
-  }*/
+/* ===============================================My CSS Starts here===================================================================== */		
   
+  body{
+	  font-family: "Nsegoeui","Helvetica Neue",Helvetica,Arial,sans-serif
+  }
   .bodybg{
-	  background-image:url(../images/bg/bg7.png);
-	  
+	  background-image:url(../images/bg/bg7.png);  
 	  background-repeat:repeat;
   }
   
   /* external link icon*/
   .externallink a[href^="http"] {  
-   background: url('img/external-link.png') center right no-repeat;  
-   padding-right: 13px;  
+   		background: url('img/external-link.png') center right no-repeat;  
+   		padding-right: 13px;  
 	}
 	
-
-  
-  
-  #header{	  
-	  width:100%;
-	  height:70px;
-	  margin-top:0px;	    
-  }
-  #hnavbar
-        {			           
-	        height: 160px;
-            right:0%;
-            width: 100%;
-            z-index:1;
-			z-index:40;
-        }	
+     
+	#header{	  
+		width:100%;
+		height:70px;
+		margin-top:0px;	    
+	}
+		
+	#hnavbar{		           
+		height: 160px;
+		right:0%;
+		width: 100%;
+		z-index:1;
+		z-index:40;
+	}	
 			
 		#hnavlist{position:relative;}
         #hnavlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
@@ -279,7 +208,20 @@
 	  text-align:center;
 	  text-decoration:none;
 	  color:#000;	  
-  }
+  } 
+	
+  #anim1 {
+	  background: transparent url(../images/portfolioAnimation/anim1.png) 0 0px no-repeat;
+	  width: 337px;
+      height: 262px;
+	}
+	
+  #anim2 {
+	  background: transparent url(../images/portfolioAnimation/anim2.png) 0 0px no-repeat;
+	  width: 337px;
+      height: 262px;
+	}
+
   
   /*  ---------------------------------------Logo--------------------------------------------*/
   #logo
@@ -290,23 +232,7 @@
 		width:163px;
 		left:5%;
 		z-index: 3;
-		
-		background:url(../images/YS_logo_sprite.png);
-		
-			/*
-			position:absolute;            
-	        top:5px;
-            height: 160px;
-            left: 5%;
-            width: 156px;
-            z-index: 3;
-			
-			
-			-moz-transition: all 1s ease;
-			-webkit-transition: all 1s ease;
-			-o-transition: all 1s ease;
-			transition: all 1s ease;
-			*/
+		background:url(../images/logo/YS_logo_sprite.png);
         }
 		
 	#logo:hover{
@@ -328,7 +254,7 @@
 		width:93px;
 		left:5%;
 		z-index: 3;		
-		background:url(../images/YS_logo_sprite_small.png);
+		background:url(../images/logo/YS_logo_sprite_small.png);
         }
 		
 	#logo_small:hover{		
@@ -670,6 +596,11 @@ border:none;
 
 /*-----------------------------------------------------------CoffeeCup-----------------------------------------------------------*/
 
+.coffee-anim{
+	margin:80px auto 0px auto !important; 
+	position:relative;
+	width: 256px !important;
+}
 .cup-smoke{
 	position:absolute;
 	display:block;	
@@ -718,6 +649,58 @@ border:none;
 	100%{opacity:0;-moz-transform:translatey(0);}
 	}
 	
+
+/****************************************************************************************************************/
+.roll {
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+
+    -webkit-transition: all 400ms ease;
+       -moz-transition: all 400ms ease;
+    
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+}
+    .roll:hover span {
+        background: #111;
+
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+    }
+.roll span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+
+    color: #fff;
+    background: hsl(206, 80%, 30%);
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}​
 	
 /* =============================================================Sticky Footer ===================================================
 	The negative value for the margin in .wrapper is the same number as the height of .footer and .push. 
