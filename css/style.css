@@ -133,6 +133,55 @@
 		    height: 100%;
 		}
 		
+		/* 	Slider
+		============================================ */
+		
+		#slideout {
+		  position: fixed;
+		  top: 40%;
+		  left: 0;
+		  -webkit-transition-duration: 0.3s;
+		  -moz-transition-duration: 0.3s;
+		  -o-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		}
+		#slideout_inner {
+		  position: fixed;
+		  top: 40%;
+		  right: -132px;
+		  border: 1px solid #BDDCEF;
+		  background-color:#E7F2F9;
+		  border-radius: 5px 0px 0px 5px;
+		  padding: 5px;
+		  -webkit-transition-duration: 0.3s;
+		  -moz-transition-duration: 0.3s;
+		  -o-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		}
+		#slideout:hover {
+		  right: 250px;
+		  cursor: pointer;
+
+		}
+		#slideout:hover #slideout_inner {
+		  right: 0;
+		  cursor: pointer;
+		  background-color: #CAE3F2;
+		}
+		
+		#slideout_inner ul{
+			list-style: none;
+			margin: 0;
+		}
+		#slideout_inner img{
+			position: fixed;
+			width: 21px;
+		}
+		
+		#slideout i{
+			margin: 2px 6px 2px 2px;
+		}		
+		
 /* ===============================================My CSS Starts here===================================================================== */		
   
   body{
@@ -554,6 +603,9 @@
 	/*border-top: 3px solid #342211;*/
   }
   
+  #about-pills li >a{
+	  padding: 6px 12px 6px 8px !important;
+  }
   
   .textquote{
 		/*
@@ -815,7 +867,73 @@ border:none;
 	
 
 /****************************************************************************************************************/
-/* ribbon style */
+/* icons */
+
+
+[class^="icons-"], [class*=" icons-"] {
+    background-image: url("../images/icons/mainIcon_sprite.png");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 20px;
+    margin-left: 2px;
+}
+.icons-profile{
+	background-position: -60px 0;	
+}
+.icons-design{
+	background-position: -40px 0;
+}
+.icons-development{
+	background-position: -20px 0;
+}
+.icons-general{
+	background-position: -100px 0;
+}
+.icons-awards{
+	background-position: -80px 0;
+}
+.icons-resume{
+	background-position: 0 0;
+}
+.icons-vcard{
+	background-position: -120px 0;
+}
+.icons-recent{
+	background-position: -140px 0;
+}
+
+
+.active .icons-profile{
+	background-position: -60px -20px;	
+}
+.active .icons-design{
+	background-position: -40px -20px;
+}
+.active .icons-development{
+	background-position: -20px -20px;
+}
+.active .icons-general{
+	background-position: -100px -20px;
+}
+.active .icons-awards{
+	background-position: -80px -20px;
+}
+.active .icons-resume{
+	background-position: 0 -20px;
+}
+.active .icons-vcard{
+	background-position: -120px -20px;
+}
+.active .icons-recent{
+	background-position: -140px -20px;
+}
+
+
 
 
 
