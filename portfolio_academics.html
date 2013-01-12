@@ -1042,12 +1042,13 @@
         //HashTag functionality
         if (window.location.hash) {
 	        $('#sidebar a[href='+ window.location.hash +']').tab('show');
+	        window.scrollTo(0,0);
 	    }
 	    
 	    $('a[data-toggle="tab"]').on('shown', function (e) {
 	    
 	    	window.location.hash = e.target.attributes['href'].nodeValue;
-        	console.log(e.target.attributes['href'].nodeValue);
+	    	window.scrollTo(0,0);
         })
     
     });
