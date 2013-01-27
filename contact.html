@@ -58,7 +58,7 @@
 	    		<li><a href="portfolio_design.html"><i class="icons-design"></i>Portfolio-Design</a></li>
 	    		<li><a href="portfolio_academics.html"><i class="icons-development"></i>Portfolio-Academics</a></li>
 	    		<li><a href="recent.html"><i class="icons-recent"></i>Recent Work</a></li>
-	    		<li><a href="profile/index.html"><i class="icons-vcard"></i>vCard</a></li>
+	    		<li><a href="http://vcard.yashsoni.com"><i class="icons-vcard"></i>vCard</a></li>
 	    		<li><a href="documents/Resume_YashSoni.pdf"><i class="icons-resume"></i>Resume</a></li>	    			    			    		
 	    	</ul>
     	</div>
@@ -88,22 +88,28 @@
                                 <div class="errorbox-good control-group">
                                     <div class="ss-item ss-item-required ss-text">
                                         <div class="ss-form-entry">
-                                            <label class="ss-q-title" for="entry_0">Name</label>
+                                            <!-- <label class="ss-q-title" for="entry_0">Name</label> -->
                                             <label class="ss-q-help" for="entry_0"></label>
-                                            <input type="text" name="entry.0.single" value=""
-                                                   class="required control-group" title="Please enter your name"
+                                            <div class="input-prepend">
+	                                            <span class="add-on"><i class="icon-user"></i></span>
+	                                            <input type="text" name="entry.0.single" type="text"
+                                                   class="required control-group" placeholder="Name" title="Please enter your name"
                                                    id="entry_0">
+                                            </div>      
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="errorbox-good">
+                                <div class="errorbox-good control-group">
                                     <div class="ss-item  ss-text">
                                         <div class="ss-form-entry">
-                                            <label class="ss-q-title" for="entry_1">Email</label> <label
-                                                class="ss-q-help" for="entry_1"></label>
-                                            <input type="text" name="entry.1.single" value="" class="ss-q-short"
+                                            <!-- <label class="ss-q-title" for="entry_1">Email</label>  -->
+                                            <label class="ss-q-help" for="entry_1"></label>
+                                            <div class="input-prepend">
+                                            	<span class="add-on"><i class="icon-envelope"></i></span>
+                                            	<input type="email" name="entry.1.single" placeholder="Email" class="ss-q-short"
                                                    id="entry_1">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -111,10 +117,13 @@
                                 <div class="errorbox-good control-group">
                                     <div class="ss-item ss-item-required ss-paragraph-text">
                                         <div class="ss-form-entry">
-                                            <label class="ss-q-title" for="entry_2">Comments</label> <label
-                                                class="ss-q-help" for="entry_2"></label>
-                                            <textarea name="entry.2.single" rows="8" cols="75" class="required"
-                                                      title="Some comments please :)" id="entry_2"></textarea>
+                                            <!-- <label class="ss-q-title" for="entry_2">Message</label>  -->
+                                            <label class="ss-q-help" for="entry_2"></label>
+                                            <div class="input-prepend">
+                                            	<span class="add-on"><i class="icon-edit"></i></span>
+                                            	<textarea name="entry.2.single" rows="8" cols="75" class="required"
+                                                      title="Some comments please :)" placeholder="Message" id="entry_2"></textarea>
+                                            </div>          
                                         </div>
                                     </div>
                                 </div>
@@ -125,8 +134,7 @@
 
                                 <div class="ss-item ss-navigate">
                                     <div class="ss-form-entry">
-                                        <button class="btn" type="submit" name="submit" value="Submit">Send to me
-                                        </button>
+                                        <button class="btn send-mail" type="submit" name="submit" value="Submit">Send to Yash!</button>
                                     </div>
                                 </div>
                             </form>
