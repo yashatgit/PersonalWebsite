@@ -312,6 +312,7 @@
 	.tab-pane >h2{
 		position: relative;
 		z-index: 100;
+		margin-bottom: 20px;
 	}
 	#sidenav > li.active a
 	 {
@@ -405,8 +406,6 @@
 	    padding: 10px;
 	}
 	
-	
-	
 	.small-box {
 		margin: 2em auto 0;
 		position: relative;
@@ -423,7 +422,7 @@
 	}
 		
 		.top-corners:after,.top-corners:before {
-		background:#f5f5f5;
+		background: url("../images/bg/bg12.png") repeat scroll 0 0 #F5F5F5;
 		content:'';
 		height:30px;
 		position:absolute;
@@ -458,7 +457,7 @@
 	}
 		
 		.bottom-corners:after,.bottom-corners:before {
-		background:#f5f5f5;
+		background: url("../images/bg/bg12.png") repeat scroll 0 0 #F5F5F5;
 		content:'';
 		height:30px;
 		position:absolute;
@@ -507,7 +506,21 @@
 	.project-info p {
 	    margin-bottom: 0;
 	}
-  
+	
+	.project-heading{
+		font-weight: bold;
+	}
+	
+	.project-desc{
+		font-size: 13px;
+	}
+	
+	.project-logo{
+		z-index: 100;
+		position: relative;
+		margin-bottom: 35px;
+	}
+
   /*  ---------------------------------------Logo--------------------------------------------*/
   #logo
         {
