@@ -62,6 +62,10 @@
 		.active.sidebar-tabs strong{
 			font-size: 16px;
 		}
+		
+		input, textarea, .uneditable-input {
+			width: 206px !important;
+		}
 	
 /* 	Pills and Tabs
 		============================================ */
@@ -167,7 +171,7 @@
 		  -moz-transition-duration: 0.3s;
 		  -o-transition-duration: 0.3s;
 		  transition-duration: 0.3s;
-		  z-index: 100;
+		  z-index: 99999999999;
 		}
 		#slideout:hover {
 		  right: 250px;
@@ -280,31 +284,48 @@
 	  width:100%;
 	  background-color:#49a514;
 	  box-shadow: inset 0px 5px 8px #000;
-  }
-  
-    #twoanim td{
-	  text-align:center;
-	  text-decoration:none;
-	  color:#000;	  
-  }
-  
-   #twoanim a{
-	  text-align:center;
-	  text-decoration:none;
-	  color:#000;	  
-  } 
+	} 
 	
-  #anim1 {
-	  background: transparent url(../images/portfolioAnimation/anim1.png) 0 0px no-repeat;
-	  width: 337px;
-      height: 262px;
+  	#animDesign {
+	  background: transparent url("../images/portfolioAnimation/design_1.png") 0 0px no-repeat;
 	}
 	
-  #anim2 {
-	  background: transparent url(../images/portfolioAnimation/anim2.png) 0 0px no-repeat;
-	  width: 337px;
-      height: 262px;
+	#animAcad {
+	  background: transparent url("../images/portfolioAnimation/acad_1.png") 0 0px no-repeat;
 	}
+	
+	.animContainer{	
+		margin:0 auto 40px;
+		max-width: 1000px;
+	}
+	
+	.singleAnim{
+		margin: 20px auto 0;
+		width: 337px;
+		height: 262px;
+		text-align: center;
+		position: relative;
+	}
+	
+	.animText{
+		position: absolute;
+		text-decoration: none;
+		color: rgb(56, 56, 56);
+		margin: 165px 0 0 -140px;
+		font-size: 30px;
+		font-family: "Diavlo";
+		text-shadow: 1px 1px 3px grey;
+	}
+	
+	.animTextDesign{
+		margin-left: -117px;
+	}
+	
+	.animDesc{
+		margin: 0 auto;
+		width: 337px;
+		text-align: center;	
+	}	
 	
 	
 	/*  ---------------------------------------Portfolio Acad Page Here--------------------------------------------*/
@@ -920,6 +941,69 @@
 	50%{opacity:1;-moz-transform:translatey(25px);} 
 	100%{opacity:0;-moz-transform:translatey(0);}
 	}
+	
+	
+	/*========================portfolio Animation================================*/
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes tada {
+	0% {-webkit-transform: scale(1);}	
+	10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+	100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+	0% {-moz-transform: scale(1);}	
+	10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+	100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+	0% {-o-transform: scale(1);}	
+	10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+	100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+	0% {transform: scale(1);}	
+	10%, 20% {transform: scale(0.9) rotate(-3deg);}
+	30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+	40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+	100% {transform: scale(1) rotate(0);}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	-moz-animation-name: tada;
+	-o-animation-name: tada;
+	animation-name: tada;
+}
+
 
 /*-----------------------------------------------------------FontFace-----------------------------------------------------------*/
 
