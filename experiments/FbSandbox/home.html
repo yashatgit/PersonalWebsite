@@ -42,13 +42,7 @@
   $(document).ready(function(){
 	  
 	  $('#visitLink').click(function(){
-		  
-	  })
-	  
-  });
-  function visitLink()
-	  {
-	      FB.api(
+		FB.api(
 		  'me/yashfbsandbox:visited'
 		  'post',
 		  {
@@ -61,8 +55,10 @@
 	              alert('Cook was successful! Action ID: ' + response.id);
 	           }
 		  }
-		);
-	  };
+		);  
+	  })
+	  
+  });
     window.fbAsyncInit = function() {
       FB.init({
         appId      : 468768549838283, // App ID
@@ -150,7 +146,7 @@
                   Link
                 </a>
               </li>
-              <input type="button" id="visitLink" value="Link" onclick="visitLink()" />
+              <input type="button" id="visitLink" value="Link" />
              
             </ul>
           </div>
