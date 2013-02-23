@@ -39,30 +39,22 @@
   <div id="fb-root"></div>
   <script>
   
-  $(document).ready(function(){
-	  
+  $(document).ready(function(){	  
 	  $('#visitLink').click(function(){
-		  
-	  })
-	  
-  });
-  function visitLink()
-	  {
-	      FB.api(
+		FB.api(
 		  'me/yashfbsandbox:visited'
 		  'post',
 		  {
 		    website: "http://samples.ogp.me/256986074381212"
 		  },
 		  function(response) {
-		    if (!response || response.error) {
-	              alert('Error occurred');
-	           } else {
-	              alert('Cook was successful! Action ID: ' + response.id);
-	           }
+		    if (!response || response.error) {alert('Error occurred');} 
+		    else {alert('Cook was successful! Action ID: ' + response.id);}
 		  }
-		);
-	  };
+		);  
+	  });	  
+  });
+  
     window.fbAsyncInit = function() {
       FB.init({
         appId      : 468768549838283, // App ID
@@ -150,7 +142,7 @@
                   Link
                 </a>
               </li>
-              <input type="button" id="visitLink" value="Link" onclick="visitLink()" />
+              <input type="button" id="visitLink" value="Link" />
              
             </ul>
           </div>

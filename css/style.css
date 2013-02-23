@@ -1,5 +1,6 @@
 @import url('bootstrap.css');
 @import url('bootstrap-responsive.css');
+@import url('orbit.css');
 
 /*	Navbar Adjustments
 		============================================= */
@@ -540,6 +541,10 @@
 		z-index: 100;
 		position: relative;
 		margin-bottom: 35px;
+	}
+	
+	.acad-content{
+		padding-bottom: 40px;
 	}
 
   /*  ---------------------------------------Logo--------------------------------------------*/
