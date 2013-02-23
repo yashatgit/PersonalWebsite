@@ -39,7 +39,8 @@
   <div id="fb-root"></div>
   <script>
   
-  $(document).ready(function(){	  
+  $(document).ready(function(){
+	  
 	  $('#visitLink').click(function(){
 		FB.api(
 		  'me/yashfbsandbox:visited'
@@ -48,13 +49,16 @@
 		    website: "http://samples.ogp.me/256986074381212"
 		  },
 		  function(response) {
-		    if (!response || response.error) {alert('Error occurred');} 
-		    else {alert('Cook was successful! Action ID: ' + response.id);}
+		    if (!response || response.error) {
+	              alert('Error occurred');
+	           } else {
+	              alert('Cook was successful! Action ID: ' + response.id);
+	           }
 		  }
 		);  
-	  });	  
+	  })
+	  
   });
-  
     window.fbAsyncInit = function() {
       FB.init({
         appId      : 468768549838283, // App ID
