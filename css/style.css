@@ -782,6 +782,30 @@
   
   /*---------------------------------------Home Page Here--------------------------------------------*/
   
+  #content{
+	margin-top: 40px !important;
+	}
+	#home3_about{
+		position: relative;
+		bottom: 0;
+		float: right;
+		/* background: url("images/unused/mac.png") no-repeat; */
+	}
+	.coffee-cup {
+	    bottom: 0;
+	    left: -95px;
+	    position: absolute !important;
+	    right: 0 !important;
+	}
+	
+	#home3CarouselContainer{
+		background-color: black;
+	    height: 220px;
+	    left: 18px;
+	    position: absolute;
+	    top: 20px;
+	    width: 392px;
+	}
   
   #home_line{
 	  position:absolute;
@@ -918,18 +942,18 @@
 	-ms-animation-play-state:running;}
 	
 .cup-smoke1#cup-smoke-1{
-	background:url("../images/unused/homeScreen/smoke/smoke1.png");
+	background:url("../images/homeCarousel/smoke/smoke1.png");
 	}
 	
 .cup-smoke1#cup-smoke-2{
-	background:url("../images/unused/homeScreen/smoke/smoke2.png");
+	background:url("../iimages/homeCarousel/smoke/smoke2.png");
 	-webkit-animation-delay:0.5s;
 	-moz-animation-delay:0.5s;
 	-ms-animation-delay:0.5s;
 	}
 	
 .cup-smoke1#cup-smoke-3{
-	background:url("../images/unused/homeScreen/smoke/smoke3.png");
+	background:url("../images/homeCarousel/smoke/smoke3.png");
 	-webkit-animation-delay:1.5s;
 	-moz-animation-delay:1.5s;
 	-ms-animation-delay:1.5s;
