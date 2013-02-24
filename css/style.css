@@ -785,6 +785,20 @@
   #content{
 	margin-top: 40px !important;
 	}
+	
+	#home3Carousel{
+		background: url("../images/homeCarousel/loader.gif") no-repeat scroll center center black; 
+		height: 220px;
+		width: 392px;
+	}
+	
+/* 	some hacks */
+	#home3Carousel img{display: none !important;}
+	#home3Carousel.orbit img{display: block !important;}
+	#home3Carousel.orbit { background: none; }
+	#home3CarouselContainer .slider-nav {display: none;}
+	
+	
 	#home3_about{
 		position: relative;
 		bottom: 0;
@@ -800,11 +814,11 @@
 	
 	#home3CarouselContainer{
 		background-color: black;
-	    height: 220px;
+	    height: 225px;
 	    left: 18px;
 	    position: absolute;
-	    top: 20px;
-	    width: 392px;
+	    top: 18px;
+	    width: 394px;
 	}
   
   #home_line{
@@ -891,11 +905,6 @@
     position: absolute;
     right: 58px;
 }
- .coffee-cup{
-	position: absolute !important;
-	right: -56px;
-	bottom: 0px;	 
- }
  
  .home-keyboard{
 	bottom: -65px;
@@ -1338,6 +1347,21 @@ border:none;
 @media screen and (max-width: 680px){
 	.topbar h2, .topbar h3 { text-align: left; padding: 0; display: block;}
 	.back { left: auto; right: 0px; margin-left: 0px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.home-mac{width:400px;}
+	#home3CarouselContainer{
+		background-color: black;
+	    height: 198px;
+	    left: 16px;
+	    position: absolute;
+	    top: 17px;
+	    width: 348px;	
+	}
+	.coffee-cup{
+		left:-20px;	
+	}
 }	
 
 /****************************************************************************************************************/
