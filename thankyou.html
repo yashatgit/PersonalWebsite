@@ -4,13 +4,31 @@
     <meta charset="utf-8">
     <title>Yash Soni's Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <meta HTTP-EQUIV="REFRESH" content="4; url=contact.html">
+
     
 <!-- Mobile viewport optimized: h5bp.com/viewport -->
 	  <meta name="viewport" content="width=device-width">
 
 <!-- Main stylesheet imports bootstrap css and adds custom -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+    	var count=15,
+    		counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+    	
+    	function timer()
+		{
+		  count=count-1;
+		  if (count <= 0)
+		  {
+		     clearInterval(counter);
+		     window.location.replace("home.html");
+		     return;
+		  }
+		
+		 document.getElementById("timer").innerHTML=count + " sec"; // watch for spelling
+		}
+    </script>
 
     </head>
 
@@ -38,10 +56,15 @@
                     <div class="content">
                         <div class="hero-unit" style="height:auto; background-color:transparent;"> 
                             <div class="row-fluid">
-                                <div class="span12">
-                                    <h1 style="color:#5B6681" align="center">Thank You!</h1>
-									<h3 align="center">Your response has been noted.</h3>
-                                                            
+                                <div class="span12" style="text-align: center">
+                                    <h1 style="color:#5B6681">You rock! <img src="images/icons/rock.png" style="margin-top: -15px;"></h1>
+                                    <h2>Thanks for your note.</h2>
+									<h3>I'll get back to you within 3 days, guaranteed.</h3>
+									<div>
+										<a href="home.html" style="font-size: 12px; color:black">
+											<span>Returning home in </span><span id="timer">15 sec</span>
+										</a>	
+									</div>									                                                            
                                 </div>
                              </div>
                        </div><!-- hero-unit div ends -->       
