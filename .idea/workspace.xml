@@ -41,6 +41,26 @@
     <file path="$PROJECT_DIR$/publish/experiments/form validate/index copy.html" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371147701784" ignored="false" />
     <file path="$PROJECT_DIR$/publish/oldVersions/portfolio_design_old.html" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371147701784" ignored="false" />
     <file path="$PROJECT_DIR$/publish/profile/js/jquery.fancybox-1.3.4.pack.js" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371147701784" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/js/packages/admin/settings/templates/users/userAddEditTemplate.html" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371196823617" ignored="false" />
+    <file path="/userAddEditTemplate.html" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371196824195" ignored="false" />
+    <file path="/Dummy.txt" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197421611" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/reportingDashboards.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/audiencePeople.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/planner.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/reporting/src/com/spr/reporting/voc/api/v1/endpoint/util/DataFixService.java" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/monitoringDashboards.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/messageAndAudienceProfileWorkflow.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/notificationPreferences.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/notification.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/adminSettings.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/contentMessages.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/notificationComposer.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/error.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/rpDbCommon.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371197811780" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/js/nls/ruleEngineLabels.js" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371198737284" ignored="false" />
+    <file path="/ruleEngine.less" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371210467525" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/less/ruleEngine.less" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371210468974" ignored="false" />
+    <file path="$USER_HOME$/dev/sprinklr/svn/branches/4.1/ui/web/v3/css/ruleEngine.css" changelist="abe177f7-cde7-4175-851c-63d34d8cfbaf" time="1371210515005" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +133,7 @@
       <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="9" selection-start="6197" selection-end="6197" vertical-scroll-proportion="0.8108108">
+            <state line="108" column="53" selection-start="5777" selection-end="5777" vertical-scroll-proportion="0.43243244">
               <folding />
             </state>
           </provider>
@@ -173,15 +193,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive_menu.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/responsive_menu/responsive_menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="21" selection-start="11565" selection-end="11565" vertical-scroll-proportion="-5.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="portfolio.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oldVersions/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -222,7 +233,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="6" />
-    <option name="y" value="44" />
+    <option name="y" value="83" />
     <option name="width" value="1434" />
     <option name="height" value="809" />
   </component>
@@ -413,7 +424,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="44" width="1434" height="809" extended-state="0" />
+    <frame x="6" y="83" width="1434" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -571,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/responsive_menu/responsive_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="21" selection-start="11565" selection-end="11565" vertical-scroll-proportion="-5.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oldVersions/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="50" selection-start="555" selection-end="555" vertical-scroll-proportion="-8.875">
@@ -601,7 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="9" selection-start="6197" selection-end="6197" vertical-scroll-proportion="0.8108108">
+        <state line="108" column="53" selection-start="5777" selection-end="5777" vertical-scroll-proportion="0.43243244">
           <folding />
         </state>
       </provider>
