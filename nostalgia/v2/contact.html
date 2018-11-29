@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<meta charset="utf-8">
+<title>Yash Soni's Portfolio</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width">
+
+<link href="css/style.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.validate.js"></script>
+
+<script type="text/javascript">
+    var submitted = false;
+    $(document).ready(function () {
+        $("#commentForm").validate({
+            meta:"validate",
+            highlight:function (label) {
+                $(label).closest('.control-group').addClass('error');
+                $('.errorbox-good').addClass('error');
+            },
+            success:function (label) {
+                label
+                        .text('Looks Good!').addClass('valid')
+                        .closest('.control-group').addClass('success');
+            }
+
+        });
+    });
+</script>
+
+</head>
+
+<body class="bodybg">
+<div class="wrapper">
+
+    <div id="header">
+        <div id="hnavbar">
+            <ul id="hnavlist">
+                <li id="home"><a href="home.html"></a></li>
+                <li id="portfolio"><a href="portfolio.html"></a></li>
+                <li id="about"><a href="about.html"></a></li>
+                <li id="contact"><a href="contact.html"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="logo" class="hidden-phone"></div>
+    <div id="logo_small" class="visible-phone"></div>
+    <div id="contact_line"></div>
+
+    <div class="container-fluid" style="padding-top:100px; max-width:1160px; margin-left:auto; margin-right:auto">
+    <div id="slideout">
+    	<div id="slideout_inner">
+	    	<ul><span style="margin-left:28px">Quick Links</span>
+	    		<li><a href="portfolio_design.html"><i class="icons-design"></i>Portfolio-Design</a></li>
+	    		<li><a href="portfolio_academics.html"><i class="icons-development"></i>Portfolio-Academics</a></li>
+	    		<li><a href="recent.html"><i class="icons-recent"></i>Recent Work</a></li>
+	    		<li><a href="http://vcard.yashsoni.com"><i class="icons-vcard"></i>vCard</a></li>
+	    		<li><a href="documents/Resume_YashSoni.pdf"><i class="icons-resume"></i>Resume</a></li>	    			    			    		
+	    	</ul>
+    	</div>
+    </div>
+        <div class="row-fluid" style="margin-left:auto; margin-right:auto">
+            <div id="contacts_info" class="span8">
+                <h2 style:"margin:0px;"> Say Hello. Get in Touch</h2>
+            </div>
+            <div class="row-fluid">
+                <div class="span12" style="margin-left:auto; margin-right:auto">
+                    <div class="row-fluid">
+                        <div id="contact_col1" class="span4">
+                            <h3>The Easy Way:</h3><br>
+
+                            <p>If you have any questions or comments about the website, or have some work related
+                                queries, please share the same.
+                                <br> Or feel free to just say hi. I like that too :)</p>
+                            <!--
+                                   <p>Alternatively you can mail me on <a href="mailto:mailyash89@gmail.com">mailyash89@gmail.com</a>
+                                   -->
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                    onload="if(submitted){window.location='thankyou.html';}"></iframe>
+                            <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dGRpODBWSVpSVjVBYXdzc2t6U0RmTFE6MQ&amp;ifq"
+                                  method="POST" target="hidden_iframe" id="commentForm" onsubmit="submitted=true;">
+                                <br>
+
+                                <div class="errorbox-good control-group">
+                                    <div class="ss-item ss-item-required ss-text">
+                                        <div class="ss-form-entry">
+                                            <!-- <label class="ss-q-title" for="entry_0">Name</label> -->
+                                            <label class="ss-q-help" for="entry_0"></label>
+                                            <div class="input-prepend">
+	                                            <span class="add-on"><i class="icon-user"></i></span>
+	                                            <input type="text" name="entry.0.single" type="text"
+                                                   class="required control-group" placeholder="Name" title="Please enter your name"
+                                                   id="entry_0">
+                                            </div>      
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="errorbox-good control-group">
+                                    <div class="ss-item  ss-text">
+                                        <div class="ss-form-entry">
+                                            <!-- <label class="ss-q-title" for="entry_1">Email</label>  -->
+                                            <label class="ss-q-help" for="entry_1"></label>
+                                            <div class="input-prepend">
+                                            	<span class="add-on"><i class="icon-envelope"></i></span>
+                                            	<input type="email" name="entry.1.single" placeholder="Email" class="ss-q-short"
+                                                   id="entry_1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="errorbox-good control-group">
+                                    <div class="ss-item ss-item-required ss-paragraph-text">
+                                        <div class="ss-form-entry">
+                                            <!-- <label class="ss-q-title" for="entry_2">Message</label>  -->
+                                            <label class="ss-q-help" for="entry_2"></label>
+                                            <div class="input-prepend">
+                                            	<span class="add-on"><i class="icon-edit"></i></span>
+                                            	<textarea name="entry.2.single" rows="8" cols="75" class="required"
+                                                      title="Some comments please :)" placeholder="Message" id="entry_2"></textarea>
+                                            </div>          
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="pageNumber" value="0">
+                                <input type="hidden" name="backupCache" value="">
+
+
+                                <div class="ss-item ss-navigate">
+                                    <div class="ss-form-entry">
+                                        <button class="btn send-mail" type="submit" name="submit" value="Submit">Send to Yash!</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- span4 div ends -->
+
+                        <div id="contact_col2" class="span4">
+                            <h3>The Direct Way:</h3>
+
+                            <p><a href="mailto:mailyash89@gmail.com"><img src="images/icons/gmail.png" width="64"
+                                                                          height="64"/>mailme@yashsoni.com</a></p>
+
+                            <p><img src="images/icons/phone.png" width="64" height="64"/>+91-965-006-6285</p>
+
+                            <p><img src="images/icons/skype.png" width="64" height="64"/>yashatskype </p>
+
+                            <p><a href="documents/vCard_YashSoni.vcf"><img src="images/icons/vcard.png" width="64"
+                                                                           height="64"/>Download vCard</a></p>
+
+                            <p><a href="#QRCode" data-toggle="modal"><img src="images/icons/qrcode.png" width="64"
+                                                                          height="64"/>Scan Code</a></p>
+
+                            <div id="QRCode" class="modal hide fade" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true"
+                                 style="width:auto; margin-left:-140px; text-align:center">
+                                <div class="modal-body">
+                                    <img src="images/qrcode.png"><br>
+                                    Scan The code and save all the details.
+                                </div>
+                            </div>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+                        </div><!-- span4-2 div ends -->
+
+                        <div id="contact_col3" class="span4">
+                            <h3>The Other Ways:</h3>
+
+                            <p><a href="https://www.facebook.com/yash.soni" target="_new"><img src="images/icons/fb.png"
+                                                                                               width="64" height="64"/></a><a
+                                    href="https://www.facebook.com/yash.soni" target="_new">become my friend </a></p>
+
+                            <p><a href="https://plus.google.com/115254337266081138595/posts?tab=mX" target="_new"><img
+                                    src="images/icons/google+.png" width="64" height="64"/></a><a
+                                    href="https://plus.google.com/115254337266081138595/posts?tab=mX" target="_new">add
+                                me to your circle</a></p>
+
+                            <p><a href="http://twitter.com/yashs0ni" target="_new"><img src="images/icons/twitter.png"
+                                                                                        width="64" height="64"/></a><a
+                                    href="http://twitter.com/yashs0ni" target="_new">follow me</a></p>
+
+                            <p><a href="http://in.linkedin.com/in/soniyash" target="_new"><img
+                                    src="images/icons/linkedin.png" width="64" height="64"/></a><a
+                                    href="http://in.linkedin.com/pub/yash-soni/51/b38/10b" target="_new">my professional
+                                network</a></p>
+                        </div><!-- span4-3 div ends -->
+                    </div><!-- row-fluid -->
+                </div><!-- span12 -->
+            </div><!-- row-fluid -->
+        </div><!-- row-fluid -->
+    </div><!-- main Container-fluid -->
+    <div class="push"></div>
+</div><!-- wrapper -->
+
+<footer>
+    <hr>
+    <div class="container-fluid" align="center">
+        <p>
+            &copy; Yash Soni 2013 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a
+                href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a
+                href="contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39425421-1']);
+  _gaq.push(['_setDomainName', 'yashsoni.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>
