@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yash Soni's Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+    	var count=15,
+    		counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+    	
+    	function timer()
+		{
+		  count=count-1;
+		  if (count <= 0)
+		  {
+		     clearInterval(counter);
+		     window.location.replace("home.html");
+		     return;
+		  }
+		
+		 document.getElementById("timer").innerHTML=count + " sec"; // watch for spelling
+		}
+    </script>
+
+    </head>
+
+    <body class="bodybg">
+    <div class="wrapper">   
+  
+              <div id="header">      	
+                    <div id="hnavbar">    
+                         <ul id="hnavlist">
+                              <li id="home"><a href="home.html"></a></li>
+                              <li id="portfolio"><a href="portfolio.html"></a></li>
+                              <li id="about"><a href="about.html"></a></li>
+                              <li id="contact"><a href="contact.html"></a></li>
+                         </ul>             
+                    </div>
+               </div>
+   
+               <div id="logo" class="hidden-phone"></div>
+               <div id="logo_small" class="visible-phone"></div>
+               
+               <div id="contact_line"> </div>
+   
+    
+                <div class="container-fluid" style="margin-left:auto; margin-right:auto; max-width:1160px;">       
+                    <div class="content">
+                        <div class="hero-unit" style="height:auto; background-color:transparent;"> 
+                            <div class="row-fluid">
+                                <div class="span12" style="text-align: center">
+                                    <h1 style="color:#5B6681">You rock! <img src="images/icons/rock.png" style="margin-top: -15px;"></h1>
+                                    <h2>Thanks for your note.</h2>
+									<h3>I'll get back to you within 3 days, guaranteed.</h3>
+									<div>
+										<a href="home.html" style="font-size: 12px; color:black">
+											<span>Returning home in </span><span id="timer">15 sec</span>
+										</a>	
+									</div>									                                                            
+                                </div>
+                             </div>
+                       </div><!-- hero-unit div ends -->       
+                    </div><!-- Content div ends -->
+    </div><!-- main Container-fluid div ends -->             
+
+	<div class="push"></div>
+    </div><!-- wrapper -->
+
+
+		<footer>
+			<hr>
+			<div class="container-fluid" align="center">
+				<p>
+					&copy; Yash Soni 2013 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+				</p>
+			</div>
+		</footer>
+     
+    </body>
+</html>

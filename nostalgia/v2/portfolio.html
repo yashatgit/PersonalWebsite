@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Yash Soni's Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.spritely-0.1.js"></script>
+    
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                $('#animDesign').sprite({fps:1.5, no_of_frames:4});
+                $('#animAcad').sprite({fps:2, no_of_frames:7});
+                
+                $('#animAcad')
+                .on('mouseover', function(){
+					$(this).find('.animText').addClass('animated tada');
+				})
+				.on('mouseout', function(){
+					$(this).find('.animText').removeClass('animated tada');
+				});
+				
+				$('#animDesign')
+                .on('mouseover', function(){
+					$(this).find('.animText').addClass('animated tada');
+				})
+				.on('mouseout', function(){
+					$(this).find('.animText').removeClass('animated tada');
+				});
+                
+            });
+        })(jQuery);
+    </script>
+</head>
+<body class="bodybg">
+<div class="wrapper">
+
+    <div id="header">
+        <div id="hnavbar">
+            <ul id="hnavlist">
+                <li id="home"><a href="home.html"></a></li>
+                <li id="portfolio"><a href="portfolio.html"></a></li>
+                <li id="about"><a href="about.html"></a></li>
+                <li id="contact"><a href="contact.html"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="logo" class="hidden-phone"></div>
+    <div id="logo_small" class="visible-phone"></div>
+
+    <div id="portfolio_line"></div>
+
+    <div class="container-fluid" style="padding-top:100px; margin-left:auto; margin-right:auto; max-width:1160px;">
+    <div id="slideout">
+    	<div id="slideout_inner">
+	    	<ul><span style="margin-left:28px">Quick Links</span>
+	    		<li><a href="portfolio_design.html"><i class="icons-design"></i>Portfolio-Design</a></li>
+	    		<li><a href="portfolio_academics.html"><i class="icons-development"></i>Portfolio-Academics</a></li>
+	    		<li><a href="recent.html"><i class="icons-recent"></i>Recent Work</a></li>
+	    		<li><a href="http://vcard.yashsoni.com"><i class="icons-vcard"></i>vCard</a></li>
+	    		<li><a href="documents/Resume_YashSoni.pdf"><i class="icons-resume"></i>Resume</a></li>	    			    			    		
+	    	</ul>
+    	</div>
+    </div>
+    
+	<div class="row-fluid animContainer">
+	  <div class="span12">
+	    <div class="row-fluid">
+	      <div class="span6">
+	      	<a href="portfolio_academics.html"><div id="animAcad" class="singleAnim"><span class="animText">Academics</span></div></a>
+	      	<div class="animDesc ">Click to see some of my projects <br/>(Research, Academic, Industrial)</div>
+	      </div>
+	      <div class="span6">
+		  	<a href="portfolio_design.html"><div id="animDesign" class="singleAnim"><span class="animText animTextDesign">Design</span></div></a>
+		  	<div class="animDesc ">Click to see some of my hobby work <br/>(Paintings, Games, Designs)</div>    
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    
+    </div><!-- .container -->
+    <div class="push"></div>
+</div><!-- wrapper -->
+
+<footer>
+    <hr>
+    <div class="container-fluid" align="center">
+        <p>
+            &copy; Yash Soni 2013 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a
+                href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a
+                href="contact.html">Contact</a>
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39425421-1']);
+  _gaq.push(['_setDomainName', 'yashsoni.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

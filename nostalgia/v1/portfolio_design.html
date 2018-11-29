@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yash Soni's Portfolio</title>
+    
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+
+<!-- Main stylesheet imports bootstrap css and adds custom -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_showcase.css" />
+
+<!-- jQuery via Google + local fallback, see h5bp.com -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS: compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>    
+
+<script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$("#showcase_paintings").awShowcase(
+	{
+		content_width:			700,
+		content_height:			470,
+		fit_to_parent:			false,
+		auto:					false,
+		interval:				3000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false, /* Trace x and y coordinates for the mouse */
+		pauseonover:			true,
+		stoponclick:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		transition_delay:		300,
+		transition_speed:		500,
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		thumbnails_slidex:		0, /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+		dynamic_height:			false, /* For dynamic height to work in webkit you need to set the width and height of images in the source. Usually works to only set the dimension of the first slide in the showcase. */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+		viewline:				false /* If set to true content_width, thumbnails, transition and dynamic_height will be disabled. As for dynamic height you need to set the width and height of images in the source. */
+	});
+	$("#showcase_games").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+		$("#showcase_typography").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+		$("#showcase_posters").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+		$("#showcase_video").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+		$("#showcase_tee").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+	
+		$("#showcase_tees").awShowcase(
+	{
+		btn_numbers:			true,
+		keybord_keys:			true,
+		transition:				'vslide', /* hslide/vslide/fade */
+		show_caption:			'onhover', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'vertical', /* vertical/horizontal */
+		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
+	});
+});
+
+</script>
+
+    <style>
+    	/* To keep short panes open decently tall */
+    	.tab-pane {min-height: 400px;}
+		.nav-pills > .active > a,
+		.nav-pills > .active > a:hover {
+  			color: #ffffff;
+  			background-color:rgba(12, 116, 168, 0.82));
+		}
+    </style>    
+
+  </head>
+
+  <body class="bodybg">
+  
+  <div id="header">      	
+		<div id="hnavbar">    
+             <ul id="hnavlist">
+                  <li id="home"><a href="home.html"></a></li>
+                  <li id="portfolio"><a href="portfolio.html"></a></li>
+                  <li id="about"><a href="about.html"></a></li>
+                  <li id="contact"><a href="contact.html"></a></li>
+             </ul>             
+        </div>
+   </div>
+   
+   <div id="logo">
+       		
+   </div>
+   
+   <div id="portfolio_line"> </div>
+
+    		
+		<div class="container-fluid" style="padding-top:100px;">
+		 	<div class="row-fluid">
+				<a href="projects_academics.html"><img src="images/portfolio_logo/portfolio_acad.png" style="right:2%; position:absolute"></a>
+                
+											
+						<div class="tab-pane" id="pills-basic" style="width:900px; margin-right:auto; margin-left:auto;">
+							<div class="tabbable" style="margin-right:auto; margin-left:auto; width:900px;">
+							  <ul class="nav nav-pills">
+							    <li class="active" style="width:150px; text-align:center" ><a href="#paintings" data-toggle="tab"><img src="images/portfolio_logo/paintings.png"><br>
+                                	Digital Paintings<br>Illustrations</a></li>
+							    <li style="width:150px; text-align:center" ><a href="#games" data-toggle="tab"><img src="images/portfolio_logo/gamesnapps.png"><br>Game Design<br>Mobile Design</a></li>
+							    <li style="width:150px; text-align:center"><a href="#typography" data-toggle="tab"><img src="images/portfolio_logo/typo.png"><br>Corporate Branding <br>and Identity</a></li>
+							    <li style="width:150px; text-align:center"><a href="#posters" data-toggle="tab"><img src="images/portfolio_logo/posters.png"><br>Posters<br>Flyers</a></li>
+                                <li style="width:150px; text-align:center"><a href="#video" data-toggle="tab"><img src="images/portfolio_logo/video.png"><br>Videos<br>2D/3D Animation</a></li>
+                                <li style="width:150px; text-align:center"><a href="#tee" data-toggle="tab"><img src="images/portfolio_logo/tee.png"><br>T-Shirt<br>Typography</a></li>
+							  </ul>
+							  <div class="tab-content">
+							    <div id="paintings" class="tab-pane active">
+							      
+                                       <div style="width:845px; margin: auto; margin-top:-80px;">        
+                                        <div id="showcase_paintings" class="showcase" style=" width:auto !important;">
+                      
+											<!--
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content" style="color:#FFF">
+                                                	Yash is my name
+                                                </div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    Yash is my name          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            -->
+											<div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/16.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/16.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+											
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/15.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/15.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/14.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/14.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+											
+                      						<div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/13.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/13.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/12.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/12.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/11.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/11.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+
+                                            
+                                 			<div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/10.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/10.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/09.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/09.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/08.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/07.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/06.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/05.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/04.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/03.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/02.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/paintings/01.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/paintings/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                                                                    
+                                        </div><!-- /.showcase1 -->        
+                                    </div><!-- /.845 width -->
+							    </div><!-------------------------------------- Paintings -------------------------------------->
+                                
+							    <div id="games" class="tab-pane">
+							    	
+                                 <div style="width:845px; margin: auto;margin-top:-80px;">        
+                                        <div id="showcase_games" class="showcase" style=" width:auto !important;">
+                      
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/01.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/02.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/03.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/04.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/05.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/06.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/07.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/gamesnapps/08.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/gamesnapps/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- /.showcase -->        
+                                    </div><!-- /.845 width -->                                    
+							    </div><!-------------------------------------- games -------------------------------------->
+                                
+							    <div id="typography" class="tab-pane">
+							      
+                                  <div style="width:845px; margin: auto;margin-top:-80px;">        
+                                        <div id="showcase_typography" class="showcase" style=" width:auto !important;">
+                      
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/01.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/02.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/03.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/04.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/05.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/06.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/07.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/08.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/freelancing/09.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/freelancing/09.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- /.showcase -->        
+                                    </div><!-- /.845 width -->
+                                  
+							    </div><!-------------------------------------- Freelancing -------------------------------------->
+                                
+							    <div id="posters" class="tab-pane">
+							      
+                                    <div style="width:845px; margin: auto;margin-top:-80px;">        
+                                        <div id="showcase_posters" class="showcase" style=" width:auto !important;">
+                      
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/01.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/02.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/03.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/04.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/05.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/06.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/07.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/08.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/09.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/09.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/10.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/10.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/11.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/11.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                                                                        <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/12.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/12.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/13.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/13.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                                                                        <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/14.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/14.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/15.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/15.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/posters/16.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/posters/16.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+
+
+                                        </div><!-- /.showcase -->        
+                                    </div><!-- /.845 width -->
+                                  
+							    </div><!-------------------------------------- Posters-------------------------------------->
+
+                                
+                                 <div id="video" class="tab-pane">
+							      
+								<div style="width:845px; margin: auto;margin-top:-80px;">        
+                                        <div id="showcase_video" class="showcase" style=" width:auto !important;">
+                      
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe src="http://player.vimeo.com/video/25338757?title=0&amp;byline=0&amp;portrait=0" width="700" height="470" frameborder="0"></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/_WQnooSoQYI" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/JB7D0UF6sSk" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/X3n_EeNcMAA" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/ufHjSTw827U" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/iUNnQbipQ1A" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/UlDvNisBZzw" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/mod3F-LkyaM" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/taS0-sUxBf0" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/09.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><iframe width="700" height="470" src="http://www.youtube.com/embed/TTR_ujzSxKI" frameborder="0" allowfullscreen></iframe></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/movies/10.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.showcase -->        
+                                    </div><!-- /.845 width -->
+                                      
+							    </div><!-------------------------------------- Video --------------------------------------> 
+
+                                
+							    <div id="tee" class="tab-pane">			     
+									<div style="width:845px; margin: auto;margin-top:-80px;">        
+                                        <div id="showcase_tee" class="showcase" style=" width:auto !important;">
+                      
+                                      		<div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/01.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/01.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                            		  		<div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/02.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/02.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>                              
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/03.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/03.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/04.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/04.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/05.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/05.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/06.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/06.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/07.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/07.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/08.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/08.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/tees/09.jpg" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/tees/09.jpg" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/01.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/01.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/02.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/02.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/03.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/03.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/04.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/04.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/05.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/05.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="showcase-slide">
+                                                <div class="showcase-content"><img src="images/typography/06.png" alt="01" /></div>
+                                    
+                                                <div class="showcase-thumbnail">
+                                                    <img src="images/typography/06.png" alt="01" width="140px" />          
+                                                  <div class="showcase-thumbnail-cover"></div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div><!-- /.showcase -->        
+                                    </div><!-- /.845 width -->
+                                      
+							    </div><!-------------------------------------- Tee--------------------------------------> 
+                                
+							  </div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+						</div><!-- /.tab-pane -->
+				
+		</div><!-- .row-fluid -->
+    
+
+      <hr>
+
+      <footer class="footer">
+            <div class="container-fluid" align="center">
+                     <p>
+                &copy; Yash Soni 2012 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+                </p>
+            </div>
+       </footer>
+
+	</div> <!-- .container -->
+
+    
+
+<!-- ==============================================
+		 JavaScript below! 															-->
+
+
+  </body>
+</html>
