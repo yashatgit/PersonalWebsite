@@ -1,599 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Yash Soni's Portfolio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
 
     <!-- Main stylesheet imports bootstrap css and adds custom -->
-    <link rel="stylesheet" href="css/style.css" >
-    
-    <link rel="stylesheet" type="text/css" href="css/portfolio/stapel.css" />	
-	<link rel="stylesheet" type="text/css" href="js/libs/fancybox/jquery.fancybox.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" />
 
-	<script src="js/libs/modernizr.custom.63321.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/portfolio/stapel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/libs/fancybox/jquery.fancybox.css"
+      media="screen"
+    />
 
-</head>
+    <script src="js/libs/modernizr.custom.63321.js"></script>
+  </head>
 
-<body class="bodybg">
-<div class="wrapper">
-    <div id="header">
+  <body class="bodybg">
+    <div class="wrapper">
+      <div id="header">
         <div id="hnavbar">
-            <ul id="hnavlist">
-                <li id="home"><a href="home.html"></a></li>
-                <li id="portfolio"><a href="portfolio.html"></a></li>
-                <li id="about"><a href="about.html"></a></li>
-                <li id="contact"><a href="contact.html"></a></li>
-            </ul>
+          <ul id="hnavlist">
+            <li id="home"><a href="home.html"></a></li>
+            <li id="portfolio"><a href="portfolio.html"></a></li>
+            <li id="about"><a href="about.html"></a></li>
+            <li id="contact"><a href="contact.html"></a></li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div id="logo" class="hidden-phone"></div>
-    <div id="logo_small" class="visible-phone"></div>
-    <div id="portfolio_line"></div>
+      <div id="logo" class="hidden-phone"></div>
+      <div id="logo_small" class="visible-phone"></div>
+      <div id="portfolio_line"></div>
 
-    <div class="container-fluid" style="padding-top:100px; max-width:960px;margin-left:auto; margin-right:auto;">
-    <div id="slideout">
-    	<div id="slideout_inner">
-	    	<ul><span style="margin-left:28px">Quick Links</span>
-	    		<li><a href="portfolio_design.html"><i class="icons-design"></i>Portfolio-Design</a></li>
-	    		<li><a href="portfolio_academics.html"><i class="icons-development"></i>Portfolio-Academics</a></li>
-	    		<li><a href="recent.html"><i class="icons-recent"></i>Recent Work</a></li>
-	    		<li><a href="http://vcard.yashsoni.com"><i class="icons-vcard"></i>vCard</a></li>
-	    		<li><a href="documents/Resume_YashSoni.pdf"><i class="icons-resume"></i>Resume</a></li>	    			    			    		
-	    	</ul>
-    	</div>
-    </div>
+      <div
+        class="container-fluid"
+        style="
+          padding-top: 100px;
+          max-width: 960px;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      >
+        <div id="slideout">
+          <div id="slideout_inner">
+            <ul>
+              <span style="margin-left: 28px;">Quick Links</span>
+              <li>
+                <a href="portfolio_design.html"
+                  ><i class="icons-design"></i>Portfolio-Design</a
+                >
+              </li>
+              <li>
+                <a href="portfolio_academics.html"
+                  ><i class="icons-development"></i>Portfolio-Academics</a
+                >
+              </li>
+              <li>
+                <a href="recent.html"
+                  ><i class="icons-recent"></i>Recent Work</a
+                >
+              </li>
+              <li>
+                <a href="http://vcard.yashsoni.com"
+                  ><i class="icons-vcard"></i>vCard</a
+                >
+              </li>
+              <li>
+                <a href="documents/Resume_YashSoni.pdf"
+                  ><i class="icons-resume"></i>Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="row-fluid">
-            
-	    	<div class="topbar">
-				<span id="close" class="back">&larr;</span>
-					<h3 id="name"></h3>
-			</div>
-					
-				<ul id="tp-grid" class="tp-grid">
-	
-					<!------------------------------------------------ Digital Paintings ------------------------------------------------------->
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/16.jpg">
-							<span class="tp-info"><span>The Silent Prawl</span></span>
-							<img src="images/Paintings1/16_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/15.jpg">
-							<span class="tp-info"><span>The Story</span></span>
-							<img src="images/Paintings1/15_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/14.jpg">
-							<span class="tp-info"><span>HULK!</span></span>
-							<img src="images/Paintings1/14_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/13.jpg">
-							<span class="tp-info"><span>Lord Ganesha</span></span>
-							<img src="images/Paintings1/13_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/12.jpg">
-							<span class="tp-info"><span>The Butterfly Effect</span></span>
-							<img src="images/Paintings1/12_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/11.jpg">
-							<span class="tp-info"><span>Dark Knight</span></span>
-							<img src="images/Paintings1/11_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/10.jpg">
-							<span class="tp-info"><span>Michael Jackson</span></span>
-							<img src="images/Paintings1/10_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/09.jpg">
-							<span class="tp-info"><span>Sachin Tendulkar</span></span>
-							<img src="images/Paintings1/09_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/08.jpg">
-							<span class="tp-info"><span>Inferno of Thoughts</span></span>
-							<img src="images/Paintings1/08_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/07.jpg">
-							<span class="tp-info"><span>Logan!</span></span>
-							<img src="images/Paintings1/07_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/06.jpg">
-							<span class="tp-info"><span>On the Lines of Beauty</span></span>
-							<img src="images/Paintings1/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/05.jpg">
-							<span class="tp-info"><span>Silent Love</span></span>
-							<img src="images/Paintings1/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/04.jpg">
-							<span class="tp-info"><span>Serenity</span></span>
-							<img src="images/Paintings1/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/03.jpg">
-							<span class="tp-info"><span>Lava Island</span></span>
-							<img src="images/Paintings1/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/02.jpg">
-							<span class="tp-info"><span>Rafael Nadal</span></span>
-							<img src="images/Paintings1/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Digital Paintings">
-						<a class="fancybox" data-fancybox-group="paintings" href="images/Paintings1/01.jpg">
-							<span class="tp-info"><span>Abstract Circles</span></span>
-							<img src="images/Paintings1/01_t.jpg" />
-						</a>
-					</li>
-	
-					
-					<!------------------------------------------------ Games n Apps --------------------------------------------->
-					<li data-pile="Games n Apps">
-						<a class="fancybox-media-games" data-fancybox-group="games" href="http://www.youtube.com/watch?v=0PQRHLpv5SQ">
-							<span class="tp-info"><span>Space Recyclers- 3D game</span></span>
-							<img src="images/gamesnapps/08_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox-media-games" data-fancybox-group="games" href="http://www.youtube.com/watch?v=f6zsGpNqtO0&t=2m34s">
-							<span class="tp-info"><span>Motion Sensing Game</span></span>
-							<img src="images/gamesnapps/09_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/01.jpg">
-							<span class="tp-info"><span>BreakOut!</span></span>
-							<img src="images/gamesnapps/01_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/02.jpg">
-							<span class="tp-info"><span>Bridge - Card Game</span></span>
-							<img src="images/gamesnapps/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/03.jpg">
-							<span class="tp-info"><span>Java Games</span></span>
-							<img src="images/gamesnapps/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/04.jpg">
-							<span class="tp-info"><span>Flash Games</span></span>
-							<img src="images/gamesnapps/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/05.jpg">
-							<span class="tp-info"><span>Kinect Game</span></span>
-							<img src="images/gamesnapps/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/06.jpg">
-							<span class="tp-info"><span>Flash Game - Battleship</span></span>
-							<img src="images/gamesnapps/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Games n Apps">
-						<a class="fancybox" data-fancybox-group="games" href="images/gamesnapps/07.jpg">
-							<span class="tp-info"><span>iPhone App Concept</span></span>
-							<img src="images/gamesnapps/07_t.jpg" />
-						</a>
-					</li>
-	
-					<!------------------------------------------------- Corporate Branding ------------------------------------------>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/01.jpg">
-							<span class="tp-info"><span>Hungry Panda</span></span>
-							<img src="images/freelancing/01_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/02.jpg">
-							<span class="tp-info"><span>Bhookh Mitane Wala</span></span>
-							<img src="images/freelancing/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/03.jpg">
-							<span class="tp-info"><span>Hungry Panda - Menu</span></span>
-							<img src="images/freelancing/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/04.jpg">
-							<span class="tp-info"><span>Hungry Panda - Menu</span></span>
-							<img src="images/freelancing/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/05.jpg">
-							<span class="tp-info"><span>Bhookh Mitane Wala - Menu</span></span>
-							<img src="images/freelancing/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/06.jpg">
-							<span class="tp-info"><span>Hungry Panda - Combos</span></span>
-							<img src="images/freelancing/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/07.jpg">
-							<span class="tp-info"><span>Hungry Panda</span></span>
-							<img src="images/freelancing/07_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/08.jpg">
-							<span class="tp-info"><span>Bhookh Mitane Wala - vCard</span></span>
-							<img src="images/freelancing/08_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Corporate Branding">
-						<a class="fancybox" data-fancybox-group="freelancing" href="images/freelancing/09.jpg">
-							<span class="tp-info"><span>Hungry Panda - vCard</span></span>
-							<img src="images/freelancing/09_t.jpg" />
-						</a>
-					</li>
-					
-					
-					<!--------------------------------------------- Posters -------------------------------------------->
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/01.jpg">
-							<span class="tp-info"><span>iCode</span></span>
-							<img src="images/posters/01_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/02.jpg">
-							<span class="tp-info"><span>Wireless Communication</span></span>
-							<img src="images/posters/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/03.jpg">
-							<span class="tp-info"><span>Forage</span></span>
-							<img src="images/posters/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/04.jpg">
-							<span class="tp-info"><span>Transporter</span></span>
-							<img src="images/posters/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/05.jpg">
-							<span class="tp-info"><span>Rass</span></span>
-							<img src="images/posters/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/06.jpg">
-							<span class="tp-info"><span>iFest</span></span>
-							<img src="images/posters/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/07.jpg">
-							<span class="tp-info"><span>Forage</span></span>
-							<img src="images/posters/07_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/08.jpg">
-							<span class="tp-info"><span>Imagineer</span></span>
-							<img src="images/posters/08_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/09.jpg">
-							<span class="tp-info"><span>Rampage</span></span>
-							<img src="images/posters/09_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/10.jpg">
-							<span class="tp-info"><span>DJ-Night</span></span>
-							<img src="images/posters/10_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/11.jpg">
-							<span class="tp-info"><span>Rhapsody</span></span>
-							<img src="images/posters/11_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/12.jpg">
-							<span class="tp-info"><span>YouthRun</span></span>
-							<img src="images/posters/12_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/13.jpg">
-							<span class="tp-info"><span>Dushhera</span></span>
-							<img src="images/posters/13_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/14.jpg">
-							<span class="tp-info"><span>iSight</span></span>
-							<img src="images/posters/14_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/15.jpg">
-							<span class="tp-info"><span>MESA</span></span>
-							<img src="images/posters/15_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Posters & Flyers">
-						<a class="fancybox" data-fancybox-group="posters" href="images/posters/16.jpg">
-							<span class="tp-info"><span>Embedded Systems</span></span>
-							<img src="images/posters/16_t.jpg" />
-						</a>
-					</li>
-					
-					<!--------------------------------------------- T-Shirts -------------------------------------------->
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/01.jpg">
-							<span class="tp-info"><span>Save Environment</span></span>
-							<img src="images/tees/01_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/02.jpg">
-							<span class="tp-info"><span>Zombies!</span></span>
-							<img src="images/tees/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/03.jpg">
-							<span class="tp-info"><span>Bike Tees</span></span>
-							<img src="images/tees/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/04.jpg">
-							<span class="tp-info"><span>Bike Tees</span></span>
-							<img src="images/tees/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/05.jpg">
-							<span class="tp-info"><span>Bike Tees</span></span>
-							<img src="images/tees/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/06.jpg">
-							<span class="tp-info"><span>Bike Tees</span></span>
-							<img src="images/tees/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/07.jpg">
-							<span class="tp-info"><span>Pirate Tee</span></span>
-							<img src="images/tees/07_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="Tees">
-						<a class="fancybox" data-fancybox-group="tshirts" href="images/tees/08.jpg">
-							<span class="tp-info"><span>Dance Coders!</span></span>
-							<img src="images/tees/08_t.jpg" />
-						</a>
-					</li>
-					
-					<!--------------------------------------------- 2D/3D Animation -------------------------------------------->
-					
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/-DstLHT2T6U">
-							<span class="tp-info"><span>Man Vs Ball</span></span>
-							<img src="images/animation/07_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/JB7D0UF6sSk">
-							<span class="tp-info"><span>Surprise in a Box!</span></span>
-							<img src="images/animation/01_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/X3n_EeNcMAA">
-							<span class="tp-info"><span>Punching Bag</span></span>
-							<img src="images/animation/02_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/z5u58VVpHLU">
-							<span class="tp-info"><span>Snoopy the Dog</span></span>
-							<img src="images/animation/08_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/ufHjSTw827U">
-							<span class="tp-info"><span>Attitude Walk</span></span>
-							<img src="images/animation/03_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/iUNnQbipQ1A">
-							<span class="tp-info"><span>Weight Lifting</span></span>
-							<img src="images/animation/06_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/UlDvNisBZzw">
-							<span class="tp-info"><span>Anticipation Jump</span></span>
-							<img src="images/animation/04_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/mod3F-LkyaM">
-							<span class="tp-info"><span>Primitives Animation</span></span>
-							<img src="images/animation/09_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/taS0-sUxBf0">
-							<span class="tp-info"><span>Leaf Sway</span></span>
-							<img src="images/animation/05_t.jpg" />
-						</a>
-					</li>
-					<li data-pile="2D/3D Animation">
-						<a class="fancybox-media" rel="media-gallery" href="http://www.youtube.com/embed/TTR_ujzSxKI">
-							<span class="tp-info"><span>Whip!</span></span>
-							<img src="images/animation/10_t.jpg" />
-						</a>
-					</li>
-				</ul>
-        </div><!-- .row-fluid --><br><br>
+          <div class="topbar">
+            <span id="close" class="back">&larr;</span>
+            <h3 id="name"></h3>
+          </div>
 
-    </div> <!-- .container -->
-    <div class="push"></div>
-</div><!-- wrapper -->
+          <ul id="tp-grid" class="tp-grid">
+            <!------------------------------------------------ Digital Paintings ------------------------------------------------------->
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/16.jpg"
+              >
+                <span class="tp-info"><span>The Silent Prawl</span></span>
+                <img src="images/Paintings1/16_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/15.jpg"
+              >
+                <span class="tp-info"><span>The Story</span></span>
+                <img src="images/Paintings1/15_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/14.jpg"
+              >
+                <span class="tp-info"><span>HULK!</span></span>
+                <img src="images/Paintings1/14_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/13.jpg"
+              >
+                <span class="tp-info"><span>Lord Ganesha</span></span>
+                <img src="images/Paintings1/13_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/12.jpg"
+              >
+                <span class="tp-info"><span>The Butterfly Effect</span></span>
+                <img src="images/Paintings1/12_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/11.jpg"
+              >
+                <span class="tp-info"><span>Dark Knight</span></span>
+                <img src="images/Paintings1/11_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/10.jpg"
+              >
+                <span class="tp-info"><span>Michael Jackson</span></span>
+                <img src="images/Paintings1/10_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/09.jpg"
+              >
+                <span class="tp-info"><span>Sachin Tendulkar</span></span>
+                <img src="images/Paintings1/09_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/08.jpg"
+              >
+                <span class="tp-info"><span>Inferno of Thoughts</span></span>
+                <img src="images/Paintings1/08_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/07.jpg"
+              >
+                <span class="tp-info"><span>Logan!</span></span>
+                <img src="images/Paintings1/07_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/06.jpg"
+              >
+                <span class="tp-info"><span>On the Lines of Beauty</span></span>
+                <img src="images/Paintings1/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/05.jpg"
+              >
+                <span class="tp-info"><span>Silent Love</span></span>
+                <img src="images/Paintings1/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/04.jpg"
+              >
+                <span class="tp-info"><span>Serenity</span></span>
+                <img src="images/Paintings1/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/03.jpg"
+              >
+                <span class="tp-info"><span>Lava Island</span></span>
+                <img src="images/Paintings1/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/02.jpg"
+              >
+                <span class="tp-info"><span>Rafael Nadal</span></span>
+                <img src="images/Paintings1/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Digital Paintings">
+              <a
+                class="fancybox"
+                data-fancybox-group="paintings"
+                href="images/Paintings1/01.jpg"
+              >
+                <span class="tp-info"><span>Abstract Circles</span></span>
+                <img src="images/Paintings1/01_t.jpg" />
+              </a>
+            </li>
 
+            <!------------------------------------------------ Games n Apps --------------------------------------------->
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox-media-games"
+                data-fancybox-group="games"
+                href="https://www.youtube.com/watch?v=0PQRHLpv5SQ"
+              >
+                <span class="tp-info"
+                  ><span>Space Recyclers- 3D game</span></span
+                >
+                <img src="images/gamesnapps/08_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox-media-games"
+                data-fancybox-group="games"
+                href="https://www.youtube.com/watch?v=f6zsGpNqtO0&t=2m34s"
+              >
+                <span class="tp-info"><span>Motion Sensing Game</span></span>
+                <img src="images/gamesnapps/09_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/01.jpg"
+              >
+                <span class="tp-info"><span>BreakOut!</span></span>
+                <img src="images/gamesnapps/01_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/02.jpg"
+              >
+                <span class="tp-info"><span>Bridge - Card Game</span></span>
+                <img src="images/gamesnapps/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/03.jpg"
+              >
+                <span class="tp-info"><span>Java Games</span></span>
+                <img src="images/gamesnapps/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/04.jpg"
+              >
+                <span class="tp-info"><span>Flash Games</span></span>
+                <img src="images/gamesnapps/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/05.jpg"
+              >
+                <span class="tp-info"><span>Kinect Game</span></span>
+                <img src="images/gamesnapps/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/06.jpg"
+              >
+                <span class="tp-info"
+                  ><span>Flash Game - Battleship</span></span
+                >
+                <img src="images/gamesnapps/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Games n Apps">
+              <a
+                class="fancybox"
+                data-fancybox-group="games"
+                href="images/gamesnapps/07.jpg"
+              >
+                <span class="tp-info"><span>iPhone App Concept</span></span>
+                <img src="images/gamesnapps/07_t.jpg" />
+              </a>
+            </li>
 
-	<footer>
-	    <hr>
-	    <div class="container-fluid" align="center">
-	        <p>
-	            &copy; Yash Soni 2013 &nbsp; &nbsp;<br> <a href="home.html">Home</a> | <a href="portfolio.html">Portfolio</a> | 
-	            <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-	        </p>
-	    </div>
-	</footer>
+            <!------------------------------------------------- Corporate Branding ------------------------------------------>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/01.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda</span></span>
+                <img src="images/freelancing/01_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/02.jpg"
+              >
+                <span class="tp-info"><span>Bhookh Mitane Wala</span></span>
+                <img src="images/freelancing/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/03.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda - Menu</span></span>
+                <img src="images/freelancing/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/04.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda - Menu</span></span>
+                <img src="images/freelancing/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/05.jpg"
+              >
+                <span class="tp-info"
+                  ><span>Bhookh Mitane Wala - Menu</span></span
+                >
+                <img src="images/freelancing/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/06.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda - Combos</span></span>
+                <img src="images/freelancing/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/07.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda</span></span>
+                <img src="images/freelancing/07_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/08.jpg"
+              >
+                <span class="tp-info"
+                  ><span>Bhookh Mitane Wala - vCard</span></span
+                >
+                <img src="images/freelancing/08_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Corporate Branding">
+              <a
+                class="fancybox"
+                data-fancybox-group="freelancing"
+                href="images/freelancing/09.jpg"
+              >
+                <span class="tp-info"><span>Hungry Panda - vCard</span></span>
+                <img src="images/freelancing/09_t.jpg" />
+              </a>
+            </li>
 
-		<script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="js/plugins/jquery.stapel.js"></script>
-		<script type="text/javascript" src="js/libs/fancybox/jquery.fancybox.js"></script>
-		<script type="text/javascript" src="js/libs/fancybox/helpers/jquery.fancybox-media.js"></script>
-		
-		<script type="text/javascript">	
-			$(function() {
+            <!--------------------------------------------- Posters -------------------------------------------->
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/01.jpg"
+              >
+                <span class="tp-info"><span>iCode</span></span>
+                <img src="images/posters/01_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/02.jpg"
+              >
+                <span class="tp-info"><span>Wireless Communication</span></span>
+                <img src="images/posters/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/03.jpg"
+              >
+                <span class="tp-info"><span>Forage</span></span>
+                <img src="images/posters/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/04.jpg"
+              >
+                <span class="tp-info"><span>Transporter</span></span>
+                <img src="images/posters/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/05.jpg"
+              >
+                <span class="tp-info"><span>Rass</span></span>
+                <img src="images/posters/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/06.jpg"
+              >
+                <span class="tp-info"><span>iFest</span></span>
+                <img src="images/posters/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/07.jpg"
+              >
+                <span class="tp-info"><span>Forage</span></span>
+                <img src="images/posters/07_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/08.jpg"
+              >
+                <span class="tp-info"><span>Imagineer</span></span>
+                <img src="images/posters/08_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/09.jpg"
+              >
+                <span class="tp-info"><span>Rampage</span></span>
+                <img src="images/posters/09_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/10.jpg"
+              >
+                <span class="tp-info"><span>DJ-Night</span></span>
+                <img src="images/posters/10_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/11.jpg"
+              >
+                <span class="tp-info"><span>Rhapsody</span></span>
+                <img src="images/posters/11_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/12.jpg"
+              >
+                <span class="tp-info"><span>YouthRun</span></span>
+                <img src="images/posters/12_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/13.jpg"
+              >
+                <span class="tp-info"><span>Dushhera</span></span>
+                <img src="images/posters/13_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/14.jpg"
+              >
+                <span class="tp-info"><span>iSight</span></span>
+                <img src="images/posters/14_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/15.jpg"
+              >
+                <span class="tp-info"><span>MESA</span></span>
+                <img src="images/posters/15_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Posters & Flyers">
+              <a
+                class="fancybox"
+                data-fancybox-group="posters"
+                href="images/posters/16.jpg"
+              >
+                <span class="tp-info"><span>Embedded Systems</span></span>
+                <img src="images/posters/16_t.jpg" />
+              </a>
+            </li>
 
-				var $grid = $( '#tp-grid' ),
-					$name = $( '#name' ),
-					$close = $( '#close' ),
-					$loader = $( '<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>' ).insertBefore( $grid ),
-					stapel = $grid.stapel( {
-						
-						randomAngle : false,
-						delay : 50,
-						pileAngles : 5, 
-						
-						onLoad : function() {
-							$loader.remove();
-						},
-						onBeforeOpen : function( pileName ) {
-							$name.html( pileName );
-						},
-						onAfterOpen : function( pileName ) {
-							$close.show();
-						}
-					} );
+            <!--------------------------------------------- T-Shirts -------------------------------------------->
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/01.jpg"
+              >
+                <span class="tp-info"><span>Save Environment</span></span>
+                <img src="images/tees/01_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/02.jpg"
+              >
+                <span class="tp-info"><span>Zombies!</span></span>
+                <img src="images/tees/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/03.jpg"
+              >
+                <span class="tp-info"><span>Bike Tees</span></span>
+                <img src="images/tees/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/04.jpg"
+              >
+                <span class="tp-info"><span>Bike Tees</span></span>
+                <img src="images/tees/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/05.jpg"
+              >
+                <span class="tp-info"><span>Bike Tees</span></span>
+                <img src="images/tees/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/06.jpg"
+              >
+                <span class="tp-info"><span>Bike Tees</span></span>
+                <img src="images/tees/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/07.jpg"
+              >
+                <span class="tp-info"><span>Pirate Tee</span></span>
+                <img src="images/tees/07_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="Tees">
+              <a
+                class="fancybox"
+                data-fancybox-group="tshirts"
+                href="images/tees/08.jpg"
+              >
+                <span class="tp-info"><span>Dance Coders!</span></span>
+                <img src="images/tees/08_t.jpg" />
+              </a>
+            </li>
 
-				$close.on( 'click', function() {
-					$close.hide('slow');
-					$name.empty();
-					stapel.closePile();
-				} );
-				
-				
-				$('.fancybox').fancybox({
-					helpers : {
-				        overlay : {
-				            css : {
-				                'z-index' : '99999'
-				            }
-				        }
-				    }
-				});
-				
-				
-				$('.fancybox-media')
-				.attr('rel', 'media-gallery')
-				.fancybox({
-				openEffect : 'none',
-					closeEffect : 'none',
-					prevEffect : 'none',
-					nextEffect : 'none',
+            <!--------------------------------------------- 2D/3D Animation -------------------------------------------->
 
-					arrows : false,
-					helpers : {
-						media : {},
-						buttons : {},
-						overlay : {
-				            css : {
-				                'z-index' : '99999'
-				            }
-				        }
-					}
-				});
-				
-				$('.fancybox-media-games')
-				.attr('data-fancybox-group', 'games')
-				.fancybox({
-				openEffect : 'none',
-					closeEffect : 'none',
-					prevEffect : 'none',
-					nextEffect : 'none',
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/-DstLHT2T6U"
+              >
+                <span class="tp-info"><span>Man Vs Ball</span></span>
+                <img src="images/animation/07_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/JB7D0UF6sSk"
+              >
+                <span class="tp-info"><span>Surprise in a Box!</span></span>
+                <img src="images/animation/01_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/X3n_EeNcMAA"
+              >
+                <span class="tp-info"><span>Punching Bag</span></span>
+                <img src="images/animation/02_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/z5u58VVpHLU"
+              >
+                <span class="tp-info"><span>Snoopy the Dog</span></span>
+                <img src="images/animation/08_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/ufHjSTw827U"
+              >
+                <span class="tp-info"><span>Attitude Walk</span></span>
+                <img src="images/animation/03_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/iUNnQbipQ1A"
+              >
+                <span class="tp-info"><span>Weight Lifting</span></span>
+                <img src="images/animation/06_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/UlDvNisBZzw"
+              >
+                <span class="tp-info"><span>Anticipation Jump</span></span>
+                <img src="images/animation/04_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/mod3F-LkyaM"
+              >
+                <span class="tp-info"><span>Primitives Animation</span></span>
+                <img src="images/animation/09_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/taS0-sUxBf0"
+              >
+                <span class="tp-info"><span>Leaf Sway</span></span>
+                <img src="images/animation/05_t.jpg" />
+              </a>
+            </li>
+            <li data-pile="2D/3D Animation">
+              <a
+                class="fancybox-media"
+                rel="media-gallery"
+                href="https://www.youtube.com/embed/TTR_ujzSxKI"
+              >
+                <span class="tp-info"><span>Whip!</span></span>
+                <img src="images/animation/10_t.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- .row-fluid --><br /><br />
+      </div>
+      <!-- .container -->
+      <div class="push"></div>
+    </div>
+    <!-- wrapper -->
 
-					arrows : false,
-					helpers : {
-						media : {},
-						buttons : {},
-						overlay : {
-				            css : {
-				                'z-index' : '99999'
-				            }
-				        }
-					}
-				}); 
+    <footer>
+      <hr />
+      <div class="container-fluid" align="center">
+        <p>
+          &copy; Yash Soni 2013 &nbsp; &nbsp;<br />
+          <a href="home.html">Home</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </footer>
 
-			});
-		</script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39425421-1']);
-  _gaq.push(['_setDomainName', 'yashsoni.com']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+    <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.stapel.js"></script>
+    <script
+      type="text/javascript"
+      src="js/libs/fancybox/jquery.fancybox.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/libs/fancybox/helpers/jquery.fancybox-media.js"
+    ></script>
 
-</body>
+    <script type="text/javascript">
+      $(function () {
+        var $grid = $("#tp-grid"),
+          $name = $("#name"),
+          $close = $("#close"),
+          $loader = $(
+            '<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>'
+          ).insertBefore($grid),
+          stapel = $grid.stapel({
+            randomAngle: false,
+            delay: 50,
+            pileAngles: 5,
+
+            onLoad: function () {
+              $loader.remove();
+            },
+            onBeforeOpen: function (pileName) {
+              $name.html(pileName);
+            },
+            onAfterOpen: function (pileName) {
+              $close.show();
+            },
+          });
+
+        $close.on("click", function () {
+          $close.hide("slow");
+          $name.empty();
+          stapel.closePile();
+        });
+
+        $(".fancybox").fancybox({
+          helpers: {
+            overlay: {
+              css: {
+                "z-index": "99999",
+              },
+            },
+          },
+        });
+
+        $(".fancybox-media")
+          .attr("rel", "media-gallery")
+          .fancybox({
+            openEffect: "none",
+            closeEffect: "none",
+            prevEffect: "none",
+            nextEffect: "none",
+
+            arrows: false,
+            helpers: {
+              media: {},
+              buttons: {},
+              overlay: {
+                css: {
+                  "z-index": "99999",
+                },
+              },
+            },
+          });
+
+        $(".fancybox-media-games")
+          .attr("data-fancybox-group", "games")
+          .fancybox({
+            openEffect: "none",
+            closeEffect: "none",
+            prevEffect: "none",
+            nextEffect: "none",
+
+            arrows: false,
+            helpers: {
+              media: {},
+              buttons: {},
+              overlay: {
+                css: {
+                  "z-index": "99999",
+                },
+              },
+            },
+          });
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-39425421-1"]);
+      _gaq.push(["_setDomainName", "yashsoni.com"]);
+      _gaq.push(["_trackPageview"]);
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
