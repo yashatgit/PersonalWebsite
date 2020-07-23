@@ -5,3 +5,5 @@ Older versions of my personal websites
 - v3 (2015-2018) [https://yashsoni.netlify.app/nostalgia/v3/index.html](https://yashsoni.netlify.app/nostalgia/v3/index.html)
 - v4 (2018-2020) [https://yashsoni.netlify.app](https://yashsoni.netlify.app)
 - v5 (2020-) [https://yashsoni.com](https://yashsoni.com)
+
+Wayback machine [link](https://web.archive.org/web/20011201000000*/www.yashsoni.com)
